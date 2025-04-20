@@ -1,4 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+      const logo = document.querySelector('.navbar__logo');
+      if (logo) {
+          logo.addEventListener('click', () => {
+              const inicioSection = document.querySelector('#inicio');
+              if (inicioSection) {
+                  inicioSection.scrollIntoView({ behavior: 'smooth' });
+              }
+          });
+      }
+  
+      const navToggle = document.querySelector('.navbar__toggle');
+      const navbarMenu = document.querySelector('.navbar__menu');
+  
+      if (navToggle && navbarMenu) {
+          navToggle.addEventListener('click', (e) => {
+              e.stopPropagation(); // Prevent event from bubbling up
+              navbarMenu.classList.toggle('open');
+          });
+  
+          document.addEventListener('click', (e) => {
+              if (!navbarMenu.contains(e.target) && !navToggle.contains(e.target)) {
+                  navbarMenu.classList.remove('open');
+              }
+          });
+  
+          const menuLinks = navbarMenu.querySelectorAll('a');
+          menuLinks.forEach(link => {
+              link.addEventListener('click', () => {
+                  navbarMenu.classList.remove('open');
+              });
+          });
+      }
     const startBtn = document.getElementById('btnStart');
     if (startBtn) {
       startBtn.addEventListener('click', () => {
