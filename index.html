@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restock - Optimiza tu inventario</title>
+  
+  <!-- Tipografías (solo las necesarias) -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+
+  <!-- Ícono -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Íconos Material sin frameworks -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
+        </div>
+          <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+            <span class="material-icons">menu</span>
+          </button>
+      <div class="navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-item" data-link="nosotros">Nosotros</a></li>
+          <li><a href="#beneficios" class="nav-item" data-link="beneficios">Beneficios</a></li>
+          <li><a href="#testimonios" class="nav-item" data-link="testimonios">Testimonios</a></li>
+          <li><a href="#preguntas" class="nav-item" data-link="preguntas">Preguntas</a></li>
+          <li><a href="#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
+          <li><a href="#contacto" class="nav-item" data-link="contacto">Contacto</a></li>
+          <li><a href="#descargar" class="nav-item" data-link="descargar">Descargar</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <a href="#login" class="action">Inicio sesión</a>
+          <span class="divider">|</span>
+          <a href="#registro" class="action">Registro</a>
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+            <span class="material-icons">language</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Bienvenido(a) a <br>Restock!</h1>
+          <h3 class="subtitle">- Presentado por UI-Topic -</h3>
+          <p>
+            ¡Conecta, gestiona y crece sin complicaciones!<br />
+            Nuestra plataforma te ayuda a optimizar tu inventario, simplificar pedidos y mantener el control total de tus operaciones.<br />
+            ¡Es hora de transformar la forma en que trabajas y colaboras en la cadena gastronómica!
+          </p>
+          <button class="btn-start" id="btnStart">EMPEZAR</button>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/hero-image.jpg" alt="Interior de tienda" />
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <!-- Aquí puedes añadir secciones como #beneficios, #testimonios, etc -->
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Restock. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
