@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restock - Optimiza tu inventario</title>
-  
+
   <!-- Tipografías (solo las necesarias) -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
 
@@ -15,18 +16,18 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Estilos -->
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/styles/styles.css" />
 </head>
 
 <body>
   <header>
     <nav class="navbar">
-        <div class="navbar__logo">
-            <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
-        </div>
-          <button class="navbar__toggle" id="navToggle" aria-label="Menú">
-            <span class="material-icons">menu</span>
-          </button>
+      <div class="navbar__logo">
+        <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span class="material-icons">menu</span>
+      </button>
       <div class="navbar__menu">
         <ul class="navbar__links">
           <li><a href="#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
@@ -56,7 +57,8 @@
           <h3 class="subtitle">- Presentado por UI-Topic -</h3>
           <p>
             ¡Conecta, gestiona y crece sin complicaciones!<br />
-            Nuestra plataforma te ayuda a optimizar tu inventario, simplificar pedidos y mantener el control total de tus operaciones.<br />
+            Nuestra plataforma te ayuda a optimizar tu inventario, simplificar pedidos y mantener el control total de
+            tus operaciones.<br />
             ¡Es hora de transformar la forma en que trabajas y colaboras en la cadena gastronómica!
           </p>
           <button class="btn-start" id="btnStart">EMPEZAR</button>
@@ -72,11 +74,49 @@
     <!-- Aquí puedes añadir secciones como #beneficios, #testimonios, etc -->
   </main>
 
-  <footer>
-    <p>&copy; 2025 Restock. Todos los derechos reservados.</p>
+  <footer class="footer" id="footer">
+    <div class="footer__main">
+      <div class="footer__left">
+        <img src="assets/img/restock_logo.png" alt="Restock logo" class="footer__logo" />
+        <p class="footer__text">Con Restock, gestiona tu inventario con precisión y tranquilidad en cada movimiento. La
+          eficiencia de tu cocina y tu negocio es nuestra prioridad, 24/7.</p>
+      </div>
+
+      <div class="footer__right">
+        <div class="footer__section">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#inicio">Nosotros</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#contacto">Descargar</a></li>
+          </ul>
+        </div>
+        <div class="footer__section">
+          <h4>Redes Sociales</h4>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><img src="assets/icons/" alt="@restock" /></a>
+            <a href="#" aria-label="Instagram"><img src="assets/icons/" alt="@restock" /></a>
+            <a href="#" aria-label="Twitter"><img src="assets/icons/" alt="@restock" /></a>
+            <a href="#" aria-label="LinkedIn"><img src="assets/icons/" alt="Restock" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="#politicas">Políticas de Privacidad</a>
+      <span class="divider">|</span>
+      <a href="#terminos">Términos de Servicio</a>
+      <span class="divider">|</span>
+      <span>© 2025 Restock. Todos los derechos reservados.</span>
+    </div>
   </footer>
 
   <!-- JS -->
-  <script src="assets/js/main.js" defer></script>
+  <script src="assets/scripts/main.js" defer></script>
 </body>
+
 </html>
