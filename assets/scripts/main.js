@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (startBtn) {
       startBtn.addEventListener('click', () => {
         window.scrollTo({
-          top: document.querySelector('#nosotros')?.offsetTop || 0,
+          top: document.querySelector('#about-us')?.offsetTop || 0,
           behavior: 'smooth'
         });
       });

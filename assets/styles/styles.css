@@ -1,8 +1,9 @@
-    .hero {
-        padding: 60px 40px;
+      .hero {
         display: flex;
         justify-content: center;
         background-color: #ffffff;
+        padding-top: 170px;
+        margin-bottom: 120px;
       }
       
       .hero-content {
@@ -68,10 +69,14 @@
       
       
     .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 999;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between; 
-      padding: 0 30px;
       font-family: 'Poppins', sans-serif;
       background-color: #F4F4F4;
       height: 64px;
@@ -84,9 +89,6 @@
       display: none;
       background: none;
       border: none;
-      font-size: 28px;
-      color: #4F8A5B;
-      cursor: pointer;
     }
 
     .navbar__menu {
@@ -112,7 +114,7 @@
         color: #7d8896;
         font-weight: 600;
         transition: all 0.3s ease;
-        padding: 8px 12px;
+        padding: 8px 15px;
         display: inline-block;
     }
       
@@ -140,7 +142,7 @@
     .navbar__actions {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 10px;
     }
     
     .action {
@@ -176,6 +178,70 @@
 
     .navbar__logo:hover {
         opacity: 0.8;
+    }
+
+    .about-us-title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 2.5rem;
+        color: #3C3C3C;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-us-cards h3 {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        color: #3C3C3C;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .about-us-description {
+        font-family: 'Inter', sans-serif;
+        font-size: 1rem;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 50px;
+        text-align: center;
+        padding: 0 60px;
+    }
+
+    .about-us p {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 50px;
+      text-align: center;
+    }
+
+    .about-us-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .about-us-cards .card {
+      flex: 0 1 355px;
+      border: 2px solid #4F8A5B;
+      border-radius: 17px;
+      padding: 1.5rem;
+      background-color: #fff;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s;
+      max-width: 355px;
+      max-height: 370px;
+    }
+
+    .about-us-cards .card img {
+      justify-content: center;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .about-us-cards .card:hover {
+      transform: translateY(-5px);
     }
 
 @media (max-width: 1120px) and (min-width: 880px) {
@@ -252,7 +318,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 0 30px;
     font-family: 'Poppins', sans-serif;
     background-color: #F4F4F4;
     height: 64px;
@@ -355,6 +420,7 @@
 }
 
 @media (max-width: 880px) {
+
   .hero {
     display: flex;
     flex-direction: column;
@@ -408,20 +474,22 @@
 
   .navbar {
     flex-wrap: wrap;
-    padding: 16px;
     position: relative;
     height: auto;
     min-height: 64px;
+    width: auto;
+    margin: 0 auto;
   }
 
   .navbar__toggle {
+
     display: block;
     background: none;
     border: none;
     font-size: 1.5rem;
     color: #4F8A5B;
     cursor: pointer;
-    padding: 0.5rem;
+    padding: 2.5rem;
     order: 2;
     transition: transform 0.3s ease;
   }
