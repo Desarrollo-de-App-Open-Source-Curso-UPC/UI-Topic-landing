@@ -534,6 +534,99 @@
   }
 }
 
+/* Contacto */
+.contact {
+  background-color: #ffffff;
+  height: 100vh;
+  padding: 20px;
+  display: flex; /* Activa flexbox para el centrado vertical y horizontal */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  text-align: center; /* Centra el texto dentro de los elementos */
+}
+
+.contact__container {
+  max-width: 800px;
+  width: 100%; /* Asegura que el contenedor ocupe el ancho disponible dentro del padding */
+  margin: 0 auto; /* Centra horizontalmente el contenedor en pantallas más grandes (redundante con flexbox del padre, pero útil si se reutiliza) */
+  padding: 30px; /* Añade un poco de espacio alrededor del contenido interno */
+}
+
+.contact__title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #000000; /* Color verde, coincide con el botón */
+  margin-bottom: 20px;
+}
+
+.contact__description {
+  font-size: 16px;
+  color: #3C3C3C;
+  margin-bottom: 40px;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%; /* Asegura que el formulario ocupe el ancho del contenedor */
+}
+
+.contact__group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact__group ::placeholder {
+  color: #7D7D7D;
+}
+
+.contact__group input,
+.contact__group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  resize: vertical;
+}
+
+.contact__group textarea {
+  box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.contact__group input:focus,
+.contact__group textarea:focus {
+  outline: none;
+  border-color: #4F8A5B;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.contact__submit {
+  margin-top: 10px;
+  font-family: 'Inter';
+}
+
+.btn--primary {
+  background-color: #4F8A5B;
+  color: #ffffff;
+  padding: 12px 50px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 100;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  letter-spacing: 2px; /* Añadiendo un pequeño espaciado entre letras */
+}
+
+.btn--primary:hover {
+  background-color: #3a6c47;
+}
+
 /* Footer */
 
 .footer {
