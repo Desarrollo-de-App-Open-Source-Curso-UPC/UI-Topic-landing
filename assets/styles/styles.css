@@ -610,3 +610,112 @@
           background-color: #3b7047;
         }
       }
+
+/* tutorial */
+
+.tutorial {
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  display: flex;
+}
+
+.tutorial__header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.tutorial__title {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tutorial__description {
+  font-size: 1.1em;
+  color: #666;
+  max-width: 100%;
+  line-height: 1.6;
+}
+
+.tutorial__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  width: 90%; /* Aumentamos el ancho del grid para ocupar casi todo el ancho */
+  max-width: 100vw;
+}
+
+.tutorial__step {
+  border: #C7C7C7 solid 1px;
+  border-radius: 17px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+  height: auto; /* Dejamos que la altura se ajuste al contenido */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutorial__step:hover {
+  transform: translateY(-3px);
+}
+
+.tutorial__step-title {
+  font-size: 1.2em;
+  color: #000000;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.tutorial__step img {
+  width: 100%;
+  height: auto;
+    border-radius: 6px;
+}
+    
+.tutorial__links-container{
+  max-width: 100vw;
+  width: 100%;
+  margin-top: 30px;
+  padding-left: 20%;
+}
+
+.tutorial__links ul {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: left;
+      }
+      
+      .tutorial__links ul li a {
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+      
+    .tutorial__links ul li a:hover {
+      color: #0056b3; 
+    }
+    
+    /* mobile */
+    @media (max-width: 768px) {
+      .tutorial__grid {
+        grid-template-columns: 1fr; 
+      }
+      
+      .tutorial__links-container {
+        gap: 15px;
+        padding: 0;
+        max-width: 80%;
+      }
+    
+      .tutorial__links ul {
+        flex-direction: column; 
+        align-items: center;
+      }
+      
+    }
