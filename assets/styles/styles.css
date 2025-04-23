@@ -539,24 +539,24 @@
   background-color: #ffffff;
   height: 100vh;
   padding: 20px;
-  display: flex; /* Activa flexbox para el centrado vertical y horizontal */
-  justify-content: center; /* Centra horizontalmente el contenido */
-  align-items: center; /* Centra verticalmente el contenido */
-  text-align: center; /* Centra el texto dentro de los elementos */
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  text-align: center; 
 }
 
 .contact__container {
   max-width: 800px;
-  width: 100%; /* Asegura que el contenedor ocupe el ancho disponible dentro del padding */
-  margin: 0 auto; /* Centra horizontalmente el contenedor en pantallas más grandes (redundante con flexbox del padre, pero útil si se reutiliza) */
-  padding: 30px; /* Añade un poco de espacio alrededor del contenido interno */
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .contact__title {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins';
+  font-weight: bold;
   font-size: 2.8rem;
-  font-weight: 800;
-  color: #000000; /* Color verde, coincide con el botón */
+  color: #000000;
   margin-bottom: 20px;
 }
 
@@ -571,7 +571,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 100%; /* Asegura que el formulario ocupe el ancho del contenedor */
+  width: 100%;
 }
 
 .contact__group {
@@ -582,6 +582,7 @@
 
 .contact__group ::placeholder {
   color: #7D7D7D;
+  font-style: italic;
 }
 
 .contact__group input,
@@ -620,164 +621,9 @@
   font-weight: 100;
   cursor: pointer;
   transition: background-color 0.3s;
-  letter-spacing: 2px; /* Añadiendo un pequeño espaciado entre letras */
+  letter-spacing: 2px;
 }
 
 .btn--primary:hover {
   background-color: #3a6c47;
-}
-
-/* Footer */
-
-.footer {
-  background-color: #4F8A5B;
-  color: #ffffff;
-  font-family: 'Inter', sans-serif;
-  padding: 60px 20px 30px;
-}
-
-.footer__main {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.footer__left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-bottom: 30px;
-  max-width: 50%;
-  text-align: left;
-}
-
-.footer__logo {
-  width: 160px;
-  margin-bottom: 15px;
-}
-
-.footer__text {
-  font-size: 14px;
-  line-height: 1.6;
-  color: #ffffff;
-}
-
-.footer__right {
-  display: flex;
-  gap: 40px;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.footer__section {
-  margin-bottom: 20px;
-}
-
-.footer__section h4 {
-  font-size: 16px;
-  margin-bottom: 12px;
-  font-weight: 600;
-}
-
-.footer__section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer__section ul li {
-  margin-bottom: 8px;
-}
-
-.footer__section ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  transition: opacity 0.3s;
-}
-
-.footer__section ul li a:hover {
-  opacity: 0.8;
-}
-
-.footer__social {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 5px;
-}
-
-.footer__social a {
-  display: inline-block;
-}
-
-.footer__social img {
-  width: 24px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.2s;
-}
-
-.footer__social img:hover {
-  transform: scale(1.1);
-}
-
-.footer__bottom {
-  border-top: 1px solid #ffffff;
-  margin-top: 40px;
-  padding-top: 20px;
-  text-align: center;
-  font-size: 13px;
-  color: #ffffff;
-  max-width: 90%;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.footer__bottom a {
-  color: #ffffff;
-  text-decoration: none;
-  margin: 0 8px;
-}
-
-.footer__bottom .divider {
-  margin: 0 6px;
-  color: #ffffff;
-}
-
-@media (min-width: 768px) {
-  .footer__main {
-      justify-content: space-around;
-  }
-
-  .footer__left {
-      align-items: flex-start; 
-      text-align: left;
-      margin-bottom: 0;
-      max-width: 43%;
-  }
-
-  .footer__right {
-      justify-content: flex-end;
-  }
-}
-
-@media (min-width: 600px) {
-  .footer__right {
-      display: grid;
-      grid-template-columns: auto auto;
-      gap: 120px;
-  }
-}
-
-@media (max-width: 599px) {
-  .footer__right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 30px;
-  }
 }
