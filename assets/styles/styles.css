@@ -543,9 +543,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  height: 85vh;
 }
 
 .footer__top {
@@ -559,7 +558,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 60%; 
+  width: 60%;
 }
 
 .footer__logo {
@@ -661,6 +660,7 @@
   font-size: 13px;
   color: #ffffff;
   padding: 10px 0;
+  margin: 20px 0;
 }
 
 .footer__bottom a {
@@ -718,7 +718,6 @@
     gap: 2%;
     align-items: flex-start;
     box-sizing: border-box;
-    border-top: none;
     border-top: 1px solid white;
     margin: 0 5%;
     display: flex;
@@ -749,6 +748,7 @@
       text-align: left;
       padding: 20px 5%; 
       box-sizing: border-box; 
+      text-align: center;
   }
 
   .footer__bottom a{
