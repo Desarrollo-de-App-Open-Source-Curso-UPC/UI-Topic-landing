@@ -1,7 +1,20 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  const hash = window.location.hash;
+  const container = document.querySelector(".container");
+
+  if (hash === "#signup") {
+    container.classList.add("sign-up-mode");
+  } else if (hash === "#signin") {
+    container.classList.remove("sign-up-mode");
+  } 
+});
+
+
 document.addEventListener("DOMContentLoaded", () => { 
   console.log("DOM completamente cargado");
 
-  //Cambiar entre las vistas
+  // Switch between views
   const container = document.querySelector(".container");
   const toggleSignUp = document.querySelector("#toggle-sign-up");
   const toggleSignIn = document.querySelector("#toggle-sign-in");
@@ -19,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.classList.add("recover-password-mode");
   });
 
-  // Manejador de registro
+  // Registry handler
   const signUpForm = document.querySelector("#sign-up-form");
   signUpForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -33,22 +46,22 @@ document.addEventListener("DOMContentLoaded", () => {
     {
       if(localStorage.getItem(username))
       {
-        alert("Este usuario ya está registrado. Por favor, inicia sesión.");
+        alert(`Este usuario ya está registrado. Por favor, inicia sesión.`);
       }
       else
       {
         localStorage.setItem(username, JSON.stringify({ email, password }));
-        alert("Registro exitoso. Ahora puedes iniciar sesión.");
+        alert(`Registro exitoso. Ahora puedes iniciar sesión.`);
         signUpForm.reset();
       }
     }
     else
     {
-      alert("Por favor, completa todos los campos.");
+      alert(`Por favor, completa todos los campos.`);
     } 
   });
 
-  // Manejador de inicio de sesión
+  // Login Handler
   const signInForm = document.querySelector("#sign-in-form");
   signInForm.addEventListener("submit", (event) => {
     event.preventDefault();
@@ -64,33 +77,35 @@ document.addEventListener("DOMContentLoaded", () => {
       if(userData.password == password)
       {
         localStorage.setItem("currentUser", username);
-        alert("Inicio de sesión exitoso. Bienvenido " + username + "!");
-        window.location.href = "index.html"; // Redirigir a la página principal
+        alert(`Inicio de sesión exitoso. Bienvenido ` + username + `!`);
+        window.location.href = "index.html"; 
       } 
       else 
       {
-        alert("Contraseña incorrecta.");
+        alert(`Contraseña incorrecta.`);
       }
     }
     else
     {
-      alert("Usuario no encontrado. Por favor, regístrate.");
+      alert(`Usuario no encontrado. Por favor, regístrate.`);
     }
   }); 
 
 
-  // Manejador de recuperar contraseña
+  // Password recovery manager
   const recoverPasswordForm = document.querySelector("#recover-password-form");
   recoverPasswordForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const email = document.querySelector("#recovery-email").value.trim();  
 
-    if(email)
-    {
-      
-    }
-    else
+    if (email) 
+      { 
+      alert(`Se ha enviado un enlace de recuperación a ${email}`);
+       
+      document.querySelector("#recovery-email").value = "";
+       
+    } else 
     {
       alert("Email no registrado.");
     }
