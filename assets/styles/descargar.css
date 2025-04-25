@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Previene scroll horizontal en toda la página */
+}
+
+#descargar {
+    scroll-margin-top: 70px;
+    /* Ajusta según tu header fijo */
+    /* Para que haya espacio visible */
+}
+
+.download-section {
+    display: flex;
+    /* padding-top: 2rem; */
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    padding-bottom: 11.6rem;
+    /* Agregado para dar espacio al card */
+}
+
+.download-wrapper {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: flex-start;
+    /* <-- Alinea a la izquierda */
+    align-items: center;
+    /* <-- Centra verticalmente si quieres */
+    /* overflow: hidden; */
+    /* <-- Asegura que no se salga */
+}
+
+.download-bg-image {
+    height: 100%;
+    object-fit: contain;
+}
+
+/* Recuadro superpuesto */
+.download-card {
+    position: absolute;
+    bottom: -12rem;
+    /* Menos negativo para que no se pase */
+    right: 0rem;
+    width: 80%;
+    background-color: #4F8A5B;
+    color: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.download-card h2 {
+    font-size: 43px;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    /*semibold*/
+}
+
+.download-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    margin-right: 4rem;
+}
+
+.store-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: start;
+}
+
+.store-icon {
+    width: 60px;
+    height: auto;
+    cursor: pointer;
+}
+
+.store-icon-wrapper {
+    background-color: #d9d9d956;
+    ;
+    /* verde claro */
+    width: 100px;
+    height: 100px;
+    border-radius: 40px;
+    /* círculo perfecto */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.store-icon-wrapper:hover {
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 580px) {
+
+    .download-section {
+        max-width: 100%;
+        margin-bottom: 14.8rem;
+    }
+
+    .download-card h2 {
+        font-size: 24px;
+        margin-right: 4rem;
+    }
+
+    .download-card p {
+        font-size: 10px;
+    }
+
+    .download-wrapper {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        /* overflow: hidden; */
+    }
+
+    .download-bg-image {
+        width: 100%;
+        /* ✅ Ajustado para que use todo el ancho */
+        height: auto;
+        object-fit: contain;
+    }
+
+    .store-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .store-icon-wrapper {
+        background-color: #d9d9d956;
+        ;
+        /* verde claro */
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        /* círculo perfecto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-card {
+        bottom: -20rem;
+        width: 80%;
+        padding-right: 0;
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+    .download-card h2 {
+        font-size: 20px;
+    }
+}
