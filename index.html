@@ -26,6 +26,8 @@
   <link rel="stylesheet" href="assets/styles/testimonios.css" />
   <link rel="stylesheet" href="assets/styles/preguntas-frecuentes.css" />
   <link rel="stylesheet" href="assets/styles/descargar.css" />
+  <link rel="stylesheet" href="assets/styles/tutorial.css" />
+  <link rel="stylesheet" href="assets/styles/contacto.css" />
   <link rel="stylesheet" href="assets/styles/footer.css" />
 
 </head>
@@ -238,6 +240,32 @@
       </div>
     </section>
 
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__description"> ¿Tienes preguntas o necesitas asistencia? Ponte en contacto con el equipo de
+          Restock. Estamos aquí para ayudarte. </p>
+        <form class="contact__form">
+          <div class="contact__group">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+            <input type="email" name="correo" placeholder="Correo" required />
+          </div>
+
+          <div class="contact__group">
+            <input type="tel" name="telefono" placeholder="Teléfono" required />
+          </div>
+
+          <div class="contact__group">
+            <textarea name="mensaje" placeholder="Mensaje" rows="10" required></textarea>
+          </div>
+
+          <div class="contact__submit">
+            <button type="submit" class="btn btn--primary">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
     <section id="descargar" class="download-section">
       <div class="download-wrapper">
         <img src="assets/img/descargar/imagen-principal.png" alt="Personas analizando datos" class="download-bg-image">
@@ -262,9 +290,6 @@
         </div>
       </div>
     </section>
-
-
-
   </main>
 
   <footer class="footer" id="footer">
