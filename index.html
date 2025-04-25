@@ -21,13 +21,16 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <!-- Estilos -->
- 
+
   <link rel="stylesheet" href="assets/styles/styles.css" />
   <link rel="stylesheet" href="assets/styles/testimonios.css" />
   <link rel="stylesheet" href="assets/styles/preguntas-frecuentes.css" />
   <link rel="stylesheet" href="assets/styles/descargar.css" />
   <link rel="stylesheet" href="assets/styles/benefits.css" />
- 
+  <link rel="stylesheet" href="assets/styles/tutorial.css" />
+  <link rel="stylesheet" href="assets/styles/contacto.css" />
+  <link rel="stylesheet" href="assets/styles/footer.css" />
+
 </head>
 
 <body>
@@ -255,25 +258,96 @@
 
       <div class="faq-grid">
         <div class="faq-box">
-          <h3>¿Qué es Restock?</h3>
-          <p>Restock es una plataforma que simplifica la operación gastronómica conectando restaurantes y proveedores,
-            optimizando el inventario y mejorando la eficiencia en cada pedido.</p>
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Qué es Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">Restock es una plataforma que simplifica la operación gastronómica conectando
+            restaurantes y proveedores, optimizando el inventario y mejorando la eficiencia en cada pedido.</p>
         </div>
         <div class="faq-box">
-          <h3>¿Cuánto cuesta Restock?</h3>
-          <p>En Restock, todos nuestros planes te ofrecen los mismos beneficios premium. Puedes suscribirte por más
-            tiempo y acceder a descuentos exclusivos. Elige entre plan mensual, semestral o anual, ¡y optimiza tu
-            operación desde el primer día!</p>
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Cuánto cuesta Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">En Restock, todos nuestros planes te ofrecen los mismos beneficios premium. Puedes
+            suscribirte por más tiempo y acceder a descuentos exclusivos. Elige entre plan mensual, semestral o anual,
+            ¡y optimiza tu operación desde el primer día!</p>
         </div>
         <div class="faq-box full-width">
-          <h3>¿Cómo funciona Restock?</h3>
-          <p>Restock conecta restaurantes con proveedores, automatiza la gestión de inventario y pedidos, permite hacer
-            seguimiento en tiempo real y facilita decisiones con datos y feedback.</p>
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Cómo funciona Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">Restock permite gestionar inventarios, conectando restaurantes con proveedores de forma
+            rápida y eficiente. ¡Así simplificamos todo el proceso!</p>
         </div>
       </div>
 
+
       <div class="btn-more">
         <button>VER MÁS</button>
+      </div>
+    </section>
+
+    <section class="tutorial" id="tutorial">
+      <div class="tutorial__header">
+        <h2 class="tutorial__title">Tutorial</h2>
+        <p class="tutorial__description">¿Cómo usar la plataforma? ¡Aquí te explicamos lo principal que debes saber!</p>
+      </div>
+      <div class="tutorial__grid">
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">1. Elige tu plan de suscripción.</div>
+          <img src="assets/img/tutorial/tutorial1.png" alt="Paso 1 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">2. En el apartado de inventario, verás la opción de agregar los
+            ingredientes/insumos con los que trabajas.</div>
+          <img src="assets/img/tutorial/tutorial2.png" alt="Paso 2 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">3. Ingresa la información de tus insumos.</div>
+          <img src="assets/img/tutorial/tutorial3.png" alt="Paso 3 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">4. Después verás un listado del stock de tu inventario.</div>
+          <img src="assets/img/tutorial/tutorial4.png" alt="Paso 4 del tutorial">
+        </div>
+      </div>
+      <div class="tutorial__links-container">
+        <div class="tutorial__links">
+          <ul>
+            <li>De esta manera, podrás ir gestionando tu inventario, recibir alertas, realizar pedidos
+              automáticos y ¡mucho más!</li>
+            <li>Para conocer más sobre la plataforma accede a: <a href="#">¿Cómo usar Restock? - Guía completa</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__description"> ¿Tienes preguntas o necesitas asistencia? Ponte en contacto con el equipo de
+          Restock. Estamos aquí para ayudarte. </p>
+        <form class="contact__form">
+          <div class="contact__group">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+            <input type="email" name="correo" placeholder="Correo" required />
+          </div>
+
+          <div class="contact__group">
+            <input type="tel" name="telefono" placeholder="Teléfono" required />
+          </div>
+
+          <div class="contact__group">
+            <textarea name="mensaje" placeholder="Mensaje" rows="10" required></textarea>
+          </div>
+
+          <div class="contact__submit">
+            <button type="submit" class="btn btn--primary">ENVIAR</button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -301,17 +375,54 @@
         </div>
       </div>
     </section>
-
-
-
   </main>
 
-  <footer>
-    <p>&copy; 2025 Restock. Todos los derechos reservados.</p>
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <div class="footer__top-left">
+        <img src="assets/img/restock_logo.png" alt="Restock logo" class="footer__logo" />
+        <p class="footer__text">Con Restock, gestiona tu inventario con precisión y tranquilidad en cada movimiento.
+          La
+          eficiencia de tu cocina y tu negocio es nuestra prioridad, 24/7.</p>
+      </div>
+      <div class="footer__top-right-content">
+        <div class="footer__sections">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#inicio">Nosotros</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#contacto">Descargar</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4>Redes Sociales</h4>
+          <div class="footer__social-links">
+            <a href="#" aria-label="Facebook"><img src="assets/img/Facebook.png" alt="iconFacebook" />@restock</a>
+            <a href="#" aria-label="Instagram"><img src="assets/img/Instagram.png" alt="iconInstagram" />@restock</a>
+            <a href="#" aria-label="Twitter"><img src="assets/img/Twitter.png" alt="@restock" />@restock</a>
+            <a href="#" aria-label="LinkedIn"><img src="assets/img/LinkedIn.png" alt="Restock" />Restock</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer__divider">
+    <div class="footer__bottom">
+      <a href="#politicas">Políticas de Privacidad</a>
+      <span class="divider">|</span>
+      <a href="#terminos">Términos de Servicio</a>
+      <span class="divider">|</span>
+      <span>© 2025 Restock. Todos los derechos reservados.</span>
+    </div>
   </footer>
 
   <!-- JS -->
   <script src="assets/scripts/main.js" defer></script>
+  <script src="assets/scripts/desplegable-preguntas.js" defer></script>
+
 </body>
 
 </html>
