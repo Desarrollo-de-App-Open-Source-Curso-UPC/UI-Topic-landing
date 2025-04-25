@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
 
       const logo = document.querySelector('.navbar__logo');
@@ -36,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBtn = document.getElementById('btnStart');
     if (startBtn) {
       startBtn.addEventListener('click', () => {
-        window.scrollTo({
-          top: document.querySelector('#nosotros')?.offsetTop || 0,
+        window.scrollTo({ 
+          top: document.querySelector('#about-us')?.offsetTop || 0, 
           behavior: 'smooth'
         });
       });
