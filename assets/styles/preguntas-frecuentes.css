@@ -93,6 +93,50 @@ body {
     background-color: #256329;
 }
 
+
+.faq-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-box {
+    margin-bottom: 15px;
+}
+
+.flex-desplegable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.respuesta {
+    display: none;
+    /* Inicialmente el texto está oculto */
+    margin-top: 10px;
+}
+
+.flecha {
+    fill: #4F8A5B;
+    transition: transform 0.3s ease;
+    /* Animación suave para la flecha */
+}
+
+.rotar {
+    transform: rotate(90deg);
+    /* Rotar la flecha cuando se hace clic */
+}
+
+.abierto .respuesta {
+    display: block;
+    /* Mostrar el texto cuando se abre */
+}
+
+.abierto .flecha {
+    transform: rotate(-90deg);
+    /* Rotar la flecha cuando está abierta */
+}
+
 @media screen and (max-width: 768px) {
     .faq-grid {
         grid-template-columns: 1fr;
