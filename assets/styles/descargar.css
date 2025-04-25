@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Previene scroll horizontal en toda la página */
+}
+
 #descargar {
     scroll-margin-top: 70px;
     /* Ajusta según tu header fijo */
@@ -92,4 +99,72 @@
 
 .store-icon-wrapper:hover {
     transform: scale(1.05);
+}
+
+
+@media (max-width: 580px) {
+
+    .download-section {
+        max-width: 100%;
+        margin-bottom: 14.8rem;
+    }
+
+    .download-card h2 {
+        font-size: 24px;
+        margin-right: 4rem;
+    }
+
+    .download-card p {
+        font-size: 10px;
+    }
+
+    .download-wrapper {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        /* overflow: hidden; */
+    }
+
+    .download-bg-image {
+        width: 100%;
+        /* ✅ Ajustado para que use todo el ancho */
+        height: auto;
+        object-fit: contain;
+    }
+
+    .store-icon {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
+    .store-icon-wrapper {
+        background-color: #d9d9d956;
+        ;
+        /* verde claro */
+        width: 70px;
+        height: 70px;
+        border-radius: 40px;
+        /* círculo perfecto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .download-card {
+        bottom: -20rem;
+        width: 80%;
+        padding-right: 0;
+    }
+
+
+
+}
+
+@media (max-width: 400px) {
+    .download-card h2 {
+        font-size: 20px;
+    }
 }
