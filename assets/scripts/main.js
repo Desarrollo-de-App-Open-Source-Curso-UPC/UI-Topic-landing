@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (!navbarMenu.contains(e.target) && !navToggle.contains(e.target)) {
         navbarMenu.classList.remove('open');
       }  
-    const navLinks = document.querySelectorAll('.nav-item');
+      const navLinks = document.querySelectorAll('.nav-item');
   
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
@@ -37,25 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
     menuLinks.forEach(link => {
       link.addEventListener('click', () => {
         navbarMenu.classList.remove('open');
+        });
       });
     });
-  }
-  const startBtn = document.getElementById('btnStart');
-  if (startBtn) {
-    startBtn.addEventListener('click', () => {
-      window.scrollTo({
-        top: document.querySelector('#about-us')?.offsetTop || 0,
-        behavior: 'smooth'
-      });
-    });
-  }
 
   const navLinks = document.querySelectorAll('.nav-item');
 
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       navLinks.forEach(nav => nav.classList.remove('active'));
-
       link.classList.add('active');
     });
   });
@@ -83,4 +73,4 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   });
-});
+}})
