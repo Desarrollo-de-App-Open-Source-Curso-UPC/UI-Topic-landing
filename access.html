@@ -6,26 +6,13 @@
     <link rel="stylesheet" href="assets/styles/access.css">
     <title>Login</title>
   </head>
-  
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const hash = window.location.hash;
-      const container = document.querySelector(".container");
-  
-      if (hash === "#signup") {
-        container.classList.add("sign-up-mode");
-      } else if (hash === "#signin") {
-        container.classList.remove("sign-up-mode");
-      }
-      // Puedes agregar más si usas #recover también
-    });
-  </script>
+ 
 
   <body>
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup-recover">
-          <!-- Formulario de inicio de sesión -->
+          <!-- Login form -->
           <form id="sign-in-form" class="sign-in-form">
             <h2 class="title">Iniciar sesión</h2>
             <div class="input-field"> 
@@ -51,7 +38,7 @@
             
           </form>
 
-          <!-- Formulario de registro -->
+          <!-- Register form -->
           <form id="sign-up-form" class="sign-up-form">
             <h2 class="title">Regístrate</h2>
             <div class="input-field"> 
@@ -92,7 +79,7 @@
         </div>
       </div>
 
-      <!-- Paneles para alternar entre los formularios -->
+      <!-- Panels to switch between forms -->
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">

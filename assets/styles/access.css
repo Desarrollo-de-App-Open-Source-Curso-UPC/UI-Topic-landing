@@ -40,9 +40,8 @@ body, input {
   left: 0;
 }
 .social-icon {
-  cursor: pointer; /* Cambia el cursor a una mano al pasar el mouse */
+  cursor: pointer; 
 }
-
 
 .signin-signup-recover {
   position: absolute;
