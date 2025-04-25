@@ -1,16 +1,4 @@
 
-    document.addEventListener("DOMContentLoaded", () => {
-      const hash = window.location.hash;
-      const container = document.querySelector(".container");
-  
-      if (hash === "#signup") {
-        container.classList.add("sign-up-mode");
-      } else if (hash === "#signin") {
-        container.classList.remove("sign-up-mode");
-      }
-      // Puedes agregar más si usas #recover también
-    });
-
 document.addEventListener('DOMContentLoaded', () => {
 
       const logo = document.querySelector('.navbar__logo');
