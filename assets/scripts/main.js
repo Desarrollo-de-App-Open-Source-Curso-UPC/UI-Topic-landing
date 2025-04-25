@@ -22,7 +22,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.addEventListener('click', (e) => {
       if (!navbarMenu.contains(e.target) && !navToggle.contains(e.target)) {
         navbarMenu.classList.remove('open');
-      }
+      }  
+    const navLinks = document.querySelectorAll('.nav-item');
+  
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        navLinks.forEach(nav => nav.classList.remove('active'));
+  
+        link.classList.add('active');
+      });
     });
 
     const menuLinks = navbarMenu.querySelectorAll('a');
