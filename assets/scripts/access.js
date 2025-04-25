@@ -1,3 +1,4 @@
+/* To access each view from the index */
 
 document.addEventListener("DOMContentLoaded", () => {
   const hash = window.location.hash;
@@ -8,6 +9,30 @@ document.addEventListener("DOMContentLoaded", () => {
   } else if (hash === "#signin") {
     container.classList.remove("sign-up-mode");
   } 
+});
+
+/* To access each view from the same access file */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.querySelector(".container");
+
+  function updateModeFromHash() {
+    const hash = window.location.hash;
+
+    container.classList.remove("sign-up-mode", "recover-password-mode");
+
+    if (hash === "#signup") {
+      container.classList.add("sign-up-mode");
+    } else if (hash === "#recover") {
+      container.classList.add("recover-password-mode");
+    } else { 
+      container.classList.remove("sign-up-mode", "recover-password-mode");
+    }
+  } 
+
+  updateModeFromHash();
+ 
+  window.addEventListener("hashchange", updateModeFromHash);
 });
 
 

@@ -3,12 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+ 
+  <!-- Ícono -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Íconos Material sin frameworks -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
     <link rel="stylesheet" href="assets/styles/access.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
     <title>Login</title>
   </head>
  
 
   <body>
+
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="index.html#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
+          <li><a href="index.html#about-us" class="nav-item" data-link="nosotros">Nosotros</a></li>
+          <li><a href="index.html#beneficios" class="nav-item" data-link="beneficios">Beneficios</a></li>
+          <li><a href="index.html#testimonios" class="nav-item">Testimonios</a></li>
+          <li><a href="index.html#preguntas" class="nav-item" data-link="preguntas">Preguntas</a></li>
+          <li><a href="index.html#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
+          <li><a href="index.html#contacto" class="nav-item" data-link="contacto">Contacto</a></li>
+          <li><a href="index.html" class="nav-item" data-link="descargar">Descargar</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <a href="#signin" class="action">Inicio sesión</a>
+          <span class="divider">|</span>
+          <a href="#signup" class="action">Registro</a>
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+            <span class="material-icons">language</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
     <div class="container">
       <div class="forms-container">
         <div class="signin-signup-recover">
