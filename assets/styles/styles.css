@@ -185,11 +185,17 @@
         opacity: 0.8;
       }
 
+      .about-us {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 4rem 1rem;
+      }
+
       .about-us-title {
         font-family: 'Poppins', sans-serif;
         font-size: 2.5rem;
         color: #3C3C3C;
-        margin-bottom: 20px;
         text-align: center;
       }
 
