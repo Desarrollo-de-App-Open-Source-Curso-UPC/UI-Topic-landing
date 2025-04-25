@@ -1,0 +1,157 @@
+/* 1rem = 16px */
+/* 400 regular */
+/* 600 semibold */
+
+.testimonios-section {
+    text-align: center;
+    padding-top: 6rem;
+}
+
+.titulo-testimonios {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #3C3C3C;
+}
+
+.descripcion-testimonios {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto 3rem;
+    color: #3C3C3C;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.testimonios-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* Permite que las tarjetas se ajusten en pantallas más pequeñas */
+}
+
+.card-testimonio {
+    background-color: #F4F4F4;
+    border-radius: 8px;
+    padding: 2rem 1rem 0.4rem 1rem;
+    max-width: 340px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-testimonio:hover {
+    transform: translateY(-5px);
+}
+
+.card-testimonio img {
+    width: 162px;
+    height: 162px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.nombre {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    /* semibold */
+    color: #4F8A5B;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.rol {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #4F8A5B;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+    /* semibold */
+
+    margin-bottom: 1rem;
+    margin: 0;
+}
+
+.comentario {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: #3C3C3C;
+    line-height: 1.5;
+    font-weight: 400;
+    /*regular*/
+}
+
+
+@media (max-width: 480px) {
+
+    .descripcion-testimonios {
+        text-align: left;
+        font-size: 11px;
+        margin: .2rem 4rem 2rem 4rem;
+
+    }
+
+    .titulo-testimonios {
+        text-align: left;
+        font-size: 1.5rem;
+        margin: 2rem 4rem 0rem 4rem;
+
+    }
+
+    .card-testimonio {
+        margin: 1rem;
+        display: flex;
+        flex-direction: row;
+        /* align-items: center; */
+        /* ← Esto centra verticalmente la imagen */
+        padding: 1rem;
+        max-width: 95%;
+        text-align: left;
+        align-items: stretch;
+
+    }
+
+    .card-testimonio img {
+        max-width: 100px;
+        max-height: 100px;
+        object-fit: cover;
+        margin: 0;
+        margin-right: .7rem;
+        flex-shrink: 0;
+    }
+
+    .card-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0rem 2rem 0.4rem 2rem;
+        background-color: #F4F4F4;
+        border-radius: 8px;
+        width: 100%;
+    }
+
+    .nombre,
+    .rol,
+    .comentario {
+        margin: 0;
+        margin-bottom: 0.3rem;
+    }
+
+    .nombre {
+        font-size: 1rem;
+    }
+
+    .rol,
+    .comentario {
+        font-size: 0.5rem;
+    }
+
+    .comentario {
+        margin-top: .8rem;
+    }
+}
