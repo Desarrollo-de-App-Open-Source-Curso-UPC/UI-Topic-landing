@@ -4,10 +4,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body, input {
   font-family: 'Inter', sans-serif;
+}
+
+body {
+  overflow: scroll;
 }
 
 .text-recover-password
@@ -22,8 +27,7 @@ body, input {
 .recover-password-opt {
     cursor: pointer;
     text-decoration: underline;
-    color: #4F8A5B;
-    align-self: start;
+    color: #4F8A5B; 
     padding: 20px;
 }
 
