@@ -7,7 +7,7 @@
 }
 
 body, input {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 .text-recover-password
@@ -22,6 +22,9 @@ body, input {
 .recover-password-opt {
     cursor: pointer;
     text-decoration: underline;
+    color: #4F8A5B;
+    align-self: start;
+    padding: 20px;
 }
 
 .container {
@@ -83,7 +86,8 @@ form.recover-password-form {
     z-index: 1;  
 }
 
-.title {
+.title, h2, h3{
+  font-family: 'Poppins', sans-serif;
   font-size: 2.2rem;
   color: #3C3C3C;
   margin-bottom: 10px;
@@ -95,7 +99,7 @@ form.recover-password-form {
   background-color: #E1E1E1;
   margin: 10px 0;
   height: 55px;
-  border-radius: 55px;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: 85%;
   padding: 0 1rem;
@@ -153,7 +157,7 @@ form.recover-password-form {
   border: none;
   outline: none;
   height: 49px;
-  border-radius: 49px;
+  border-radius: 5px;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
