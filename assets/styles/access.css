@@ -216,12 +216,7 @@ form.recover-password-form {
   pointer-events: none;
   padding: 3rem 12% 2rem 17%;
 }
-
-.right-panel-image {
-    pointer-events: none;
-    padding: 3rem 12% 2rem 17%;
-}  
-
+ 
 .panel .content {
   color: #3C3C3C;
   transition: transform 0.9s ease-in-out;
@@ -253,22 +248,7 @@ form.recover-password-form {
   transform: translateX(800px);
   opacity: 0;
 }
-
-.right-panel-image .image,
-.right-panel-image .content {
-  grid-template: 1 / 2; 
-  opacity: 0; 
-  
-  grid-template-columns: repeat(2, 1fr); 
-} 
-
-.image-panel { 
-    opacity: 1;
-    width: 400px;
-    transform: translateY(100%);
-    transition: transform 0.9s ease-in-out;
-    transition-delay: 0.6s;  
-}
+ 
 
 /* ANIMATIONS */
 
@@ -347,20 +327,8 @@ form.recover-password-form {
     pointer-events: none;
     opacity: 0;
 }
-
-.container.recover-password-mode .right-panel-image {
-    opacity: 1;
-    display: all;
-    z-index: 2;
-    pointer-events: all;
-    transition-delay: 1.5s;
-}
-
-.container.sign-up-mode .right-panel-image .image-panel,
-.container.recover-password-mode .right-panel-image .content {
-    opacity: 1; 
-}
-
+ 
+ 
 /* Responsive */
 
 @media (max-width: 870px) {
@@ -398,23 +366,11 @@ form.recover-password-form {
   .right-panel {
     grid-row: 3 / 4;
   }
-
-  .right-panel-image {
-    grid-row: 3 / 4;
-    }
-
+ 
   .left-panel {
     grid-row: 1 / 2;
   }
-
-  .container.recover-password-mode .image-panel {
-    opacity: 1;
-    width: 200px;
-    transition: transform 0.9s ease-in-out;
-    transition-delay: 0.6s;
-    transform: translateY(400%);
-  }
-
+ 
   .panel .content {
     padding-right: 15%;
     transition: transform 0.9s ease-in-out;
@@ -459,8 +415,7 @@ form.recover-password-form {
     transform: translateY(-300px);
   } 
 
-  .container.sign-up-mode .right-panel .content, 
-  .container.recover-password-mode .right-panel-image .content {
+  .container.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -480,10 +435,7 @@ form.recover-password-form {
   form {
     padding: 0 1.5rem;
   }
-
-  .image-panel {
-    display: all;
-  }
+ 
   .panel .content {
     padding: 0.5rem 1rem;
   }
