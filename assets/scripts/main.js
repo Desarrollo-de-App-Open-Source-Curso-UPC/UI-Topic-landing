@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Funcionalidad de cambio de idioma próximamente...');
     });
   }
-
+  
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY + 100;
