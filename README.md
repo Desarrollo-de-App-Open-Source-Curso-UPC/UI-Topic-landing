@@ -1,2 +1,2 @@
 # UI-Topic-landing
-En este repositorio irá el Landing Page
+Repositorio del Landing Page.
