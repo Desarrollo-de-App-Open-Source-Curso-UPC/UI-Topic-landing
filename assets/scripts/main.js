@@ -53,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const langBtn = document.getElementById('langBtn');
   if (langBtn) {
     langBtn.addEventListener('click', () => {
+      console.log("Aca ire la funcionandad de lenguaje")
       alert('Funcionalidad de cambio de idioma próximamente...');
     });
   }
