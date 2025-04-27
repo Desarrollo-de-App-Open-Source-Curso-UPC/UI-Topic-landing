@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+ 
+  <!-- Ícono -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Íconos Material sin frameworks -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  
+    <link rel="stylesheet" href="assets/styles/access.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Login</title>
+  </head>
+ 
+
+  <body>
+
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="index.html#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
+          <li><a href="index.html#about-us" class="nav-item" data-link="nosotros">Nosotros</a></li>
+          <li><a href="index.html#beneficios" class="nav-item" data-link="beneficios">Beneficios</a></li>
+          <li><a href="index.html#testimonios" class="nav-item">Testimonios</a></li>
+          <li><a href="index.html#preguntas" class="nav-item" data-link="preguntas">Preguntas</a></li>
+          <li><a href="index.html#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
+          <li><a href="index.html#contacto" class="nav-item" data-link="contacto">Contacto</a></li>
+          <li><a href="index.html" class="nav-item" data-link="descargar">Descargar</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <a href="#signin" class="action">Inicio sesión</a>
+          <span class="divider">|</span>
+          <a href="#signup" class="action">Registro</a>
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+            <span class="material-icons">language</span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup-recover">
+          <!-- Login form -->
+          <form id="sign-in-form" class="sign-in-form">
+            <h2 class="title">Iniciar sesión</h2>
+            <div class="input-field"> 
+              <input type="text" id="login-username" placeholder="Usuario" required />
+            </div>
+            <div class="input-field"> 
+              <input type="password" id="login-password" placeholder="Contraseña" required />
+            </div>
+            <a class="recover-password-opt" id="toggle-recover-password">¿Olvidó su contraseña?</a> 
+            <button type="submit" class="btn solid">Iniciar Sesión</button>
+            <p class="social-text">--- Iniciar sesión con ---</p>
+            <div class="social-media">
+              <a onclick="simulateLogin('Google')" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a onclick="simulateLogin('Facebook')" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a onclick="simulateLogin('Apple')" class="social-icon">
+                <i class="fab fa-apple"></i>
+              </a> 
+            </div>
+            
+          </form>
+
+          <!-- Register form -->
+          <form id="sign-up-form" class="sign-up-form">
+            <h2 class="title">Regístrate</h2>
+            <div class="input-field"> 
+              <input type="text" id="register-username" placeholder="Usuario" required />
+            </div>
+            <div class="input-field"> 
+              <input type="email" id="register-email" placeholder="Correo" required />
+            </div>
+            <div class="input-field"> 
+              <input type="password" id="register-password" placeholder="Contraseña" required />
+            </div>
+            <button type="submit" class="btn solid">Registrarse</button>
+            <p class="social-text">--- Regístrate con ---</p>
+            <div class="social-media">
+                <a onclick="simulateLogin('Google')" class="social-icon">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a onclick="simulateLogin('Facebook')" class="social-icon">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a onclick="simulateLogin('Apple')" class="social-icon">
+                    <i class="fab fa-apple"></i>
+                </a> 
+            </div>
+          </form>
+
+          <!-- Recover password form -->
+          <form id="recover-password-form" class="recover-password-form">
+            <h2 class="title">¿Olvidó su contraseña?</h2> 
+            <p class="text-recover-password">No se preocupe. Restablecer su contraseña es fácil: solo díganos con qué dirección de e-mail se registró en Restock.</p>
+            <div class="input-field"> 
+                <input type="email" id="recovery-email" placeholder="Correo" required/>
+            </div> 
+            <button type="submit" class="btn solid">ENVIAR</button>
+         </form>
+
+
+        </div>
+      </div>
+
+      <!-- Panels to switch between forms -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>¿Eres nuevo?</h3>
+            <p>
+              ¡Únete a nuestra comunidad y comienza a mejorar tus finanzas hoy!
+            </p>
+            <button class="btn switch" id="toggle-sign-up">
+              Regístrate
+            </button>
+          </div>
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>¿Ya tienes cuenta?</h3>
+            <p>
+              Ingresa para seguir gestionando tus finanzas de manera eficiente.
+            </p>
+            <button class="btn switch" id="toggle-sign-in">
+              Iniciar Sesión
+            </button>
+          </div>
+        </div>
+      </div> 
+</div> 
+
+    <script src="assets/scripts/access.js"></script>
+    <script src="assets/scripts/main.js"></script>
+  </body>
+</html>

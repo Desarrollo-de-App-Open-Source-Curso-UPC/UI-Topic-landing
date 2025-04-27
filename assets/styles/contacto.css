@@ -1,0 +1,92 @@
+/* Contacto */
+.contact {
+    background-color: #ffffff;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  }
+  
+  .contact__container {
+    padding: 30px;
+    max-width: 100vw; /* Ajusta este valor según necesites */
+    /* width: 80%; Asegura que no sea más ancho que el máximo */
+    }
+  
+  .contact__title {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 2.8rem;
+    color: #000000;
+    margin-bottom: 20px;
+  }
+  
+  .contact__description {
+    font-size: 16px;
+    color: #3C3C3C;
+    margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact__group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .contact__group ::placeholder {
+    color: #7D7D7D;
+    font-style: italic;
+  }
+  
+  .contact__group input,
+.contact__group textarea {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    resize: vertical;
+    box-sizing: border-box; /* Añade esta línea */
+}
+  
+  .contact__group textarea {
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .contact__group input:focus,
+  .contact__group textarea:focus {
+    outline: none;
+    border-color: #4F8A5B;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact__submit {
+    margin-top: 10px;
+    font-family: 'Inter';
+  }
+  
+  .btn--primary {
+    background-color: #4F8A5B;
+    color: #ffffff;
+    padding: 12px 50px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    letter-spacing: 2px;
+  }
+  
+  .btn--primary:hover {
+    background-color: #3a6c47;
+  }

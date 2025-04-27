@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restock - Optimiza tu inventario</title>
+  <meta name="description"
+    content="Plataforma para restaurantes que reduce desperdicios y mejora las ganancias mediante la gestión inteligente de inventarios y pedidos.">
+  <meta name="keywords"
+    content="restaurantes, gestión de inventario, pedidos, automatización, proveedores, tecnología gastronómica">
+  <meta name="author" content="UI-Topic Team">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="es">
+  <meta name="copyright" content="UI-Topic 2025">
+
+  <!-- Tipografías (solo las necesarias) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <!-- Ícono -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+  <!-- Íconos Material sin frameworks -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Estilos -->
+
+  <link rel="stylesheet" href="assets/styles/styles.css" />
+  <link rel="stylesheet" href="assets/styles/testimonios.css" />
+  <link rel="stylesheet" href="assets/styles/preguntas-frecuentes.css" />
+  <link rel="stylesheet" href="assets/styles/descargar.css" />
+  <link rel="stylesheet" href="assets/styles/benefits.css" />
+  <link rel="stylesheet" href="assets/styles/tutorial.css" />
+  <link rel="stylesheet" href="assets/styles/contacto.css" />
+  <link rel="stylesheet" href="assets/styles/footer.css" />
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Menú">
+        <span class="material-icons">menu</span>
+      </button>
+      <div class="navbar__menu">
+        <ul class="navbar__links">
+          <li><a href="#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
+          <li><a href="#about-us" class="nav-item" data-link="nosotros">Nosotros</a></li>
+          <li><a href="#benefits" class="nav-item" data-link="benefits">Beneficios</a></li>
+          <li><a href="#testimonios" class="nav-item">Testimonios</a></li>
+          <li><a href="#preguntas" class="nav-item" data-link="preguntas">Preguntas</a></li>
+          <li><a href="#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
+          <li><a href="#contacto" class="nav-item" data-link="contacto">Contacto</a></li>
+          <li><a href="#descargar" class="nav-item" data-link="descargar">Descargar</a></li>
+        </ul>
+        <div class="navbar__actions">
+          <a href="access.html#signin" class="action">Inicio sesión</a>
+          <span class="divider">|</span>
+          <a href="access.html#signup" class="action">Registro</a>
+          <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
+            <span class="material-icons">language</span>
+
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Bienvenido(a) a <br>Restock!</h1>
+          <h3 class="subtitle">- Presentado por UI-Topic -</h3>
+          <p>
+            ¡Conecta, gestiona y crece sin complicaciones!<br />
+            Nuestra plataforma te ayuda a optimizar tu inventario, simplificar pedidos y mantener el control total de
+            tus operaciones.<br />
+            ¡Es hora de transformar la forma en que trabajas y colaboras en la cadena gastronómica!
+          </p>
+          <button class="btn-start" id="btnStart">EMPEZAR</button>
+        </div>
+        <div class="hero-image">
+          <img src="assets/img/hero-image.jpg" alt="Interior de tienda" />
+        </div>
+      </div>
+    </section>
+
+  </header>
+
+  <main>
+
+    <section class="about-us" id="about-us">
+      <div class="about-us-content">
+        <h1 class="about-us-title">Nosotros</h1>
+        <p class="about-us-description">
+          Somos <b> UI-Topic </b>, un equipo que simplifica la gestión de inventario de negocios gastronómicos para
+          maximizar sus ganancias.
+        </p>
+        <div class="about-us-cards">
+          <div class="card">
+            <img src="assets/img/about-us/our-help.png" alt="Cómo ayudamos" />
+            <h3>Cómo ayudamos</h3>
+            <p>Conectamos restaurantes y proveedores mediante una plataforma inteligente que
+              automatiza el control de inventario, optimiza pedidos y mejora la eficiencia
+              operativa en el sector gastronómico.</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/about-us/valor.png" alt="Propuesta de valor" />
+            <h3>Propuesta de valor</h3>
+            <p>Centralizamos y automatizamos la gestión de inventarios y pedidos en la industria gastronómica,
+              conectando eficientemente a restaurantes y proveedores para reducir desperdicios y tomar
+              decisiones más inteligentes.</p>
+          </div>
+          <div class="card">
+            <img src="assets/img/about-us/mision-vision.png" alt="Misión y Visión" />
+            <h3>Misión y Visión</h3>
+            <p>Impulsamos la eficiencia y sostenibilidad del sector gastronómico con una plataforma inteligente
+              que transforma la gestión de insumos y pedidos para restaurantes y proveedores.</p>
+          </div>
+        </div>
+    </section>
+
+    <section class="benefits" id="benefits">
+      <div class="benefits-content">
+        <h1 class="benefits-title">Beneficios</h1>
+        <p class="benefits-description">
+          Descubre cómo nuestra plataforma puede ayudarte a tomar el control
+          de tu inventario y alcanzar tus objetivos económicos de manera inteligente y eficaz.
+        </p>
+        <h2 class="benefits-admin-title">Dueños/administradores de restaurantes</h2>
+        <div class="benefits-cards-admin">
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/adminbenefit-1.png" alt="Beneficio 1" />
+            <div class="benefits-text">
+              <p>Control preciso del inventario y reducción de desperdicios.</p>
+            </div>
+
+
+          </div>
+          <div class="benefits-card">
+            <img src="assets/img/benefits/adminbenefit-2.png" alt="Beneficio 2" />
+            <div class="benefits-text">
+              <p>Gestión eficiente de compras, recetas y abastecimiento.</p>
+            </div>
+          </div>
+
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/adminbenefit-3.png" alt="Beneficio 3" />
+            <div class="benefits-text">
+              <p>Alertas automáticas y métricas clave para decisiones estratégicas.</p>
+            </div>
+          </div>
+
+          <div class="benefits-card">
+            <img src="assets/img/benefits/adminbenefit-4.png" alt="Beneficio 4" />
+            <div class="benefits-text">
+              <p>Seguimiento en tiempo real de pedidos y entregas.</p>
+            </div>
+          </div>
+
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/adminbenefit-5.png" alt="Beneficio 5" />
+            <div class="benefits-text">
+              <p>Evaluación de proveedores y mejora continua de operaciones.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="benefits-supplier-title">Proveedores de restaurantes</h2>
+
+        <div class="benefits-cards-supplier">
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/supplierbenefit-6.png" alt="Beneficio 6" />
+            <div class="benefits-text">
+              <p>Gestión fácil y actualizada del catálogo de productos.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <img src="assets/img/benefits/supplierbenefit-7.png" alt="Beneficio 7" />
+            <div class="benefits-text">
+              <p>Visualización y actualización del estado de órdenes en tiempo real.</p>
+            </div>
+          </div>
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/supplierbenefit-8.png" alt="Beneficio 8" />
+            <div class="benefits-text">
+              <p>Acceso a historial de ventas y reportes de facturación.</p>
+            </div>
+          </div>
+          <div class="benefits-card">
+            <img src="assets/img/benefits/supplierbenefit-9.png" alt="Beneficio 9" />
+            <div class="benefits-text">
+              <p>Comunicación directa con restaurantes y mejor reputación gracias al feedback.</p>
+            </div>
+          </div>
+          <div class="benefits-card alternate">
+            <img src="assets/img/benefits/supplierbenefit-10.png" alt="Beneficio 10" />
+            <div class="benefits-text">
+              <p>Plataforma accesible para organizar y optimizar sus despachos.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section id="testimonios" class="testimonios-section">
+      <div class="container">
+        <h2 class="titulo-testimonios">Testimonios</h2>
+        <p class="descripcion-testimonios">
+          Escucha lo que nuestros usuarios dicen sobre cómo Restock ha transformado su negocio,
+          ayudándolos a gestionar su inventario de manera más inteligente y a alcanzar sus metas
+          con mayor tranquilidad y confianza.
+        </p>
+        <div class="testimonios-cards">
+          <div class="card-testimonio">
+            <img src="assets/img/testimoniales/testimonial-1.png" alt="Alejandro R." />
+            <div class="card-content">
+              <h3 class="nombre">Alejandro R.</h3>
+              <p class="rol">- Administrador de restaurante -</p>
+              <p class="comentario">
+                “Desde que usamos la plataforma, tenemos el control total del inventario y cero
+                quiebres de stock. ¡Un cambio total en nuestra operación!”
+              </p>
+            </div>
+
+          </div>
+          <div class="card-testimonio">
+            <img src="assets/img/testimoniales/testimonial-2.png" alt="Katy P." />
+            <div class="card-content">
+              <h3 class="nombre">Katy P.</h3>
+              <p class="rol">- Dueña de restaurante -</p>
+              <p class="comentario">
+                "Ahora todo está automatizado. Ahorramos tiempo, dinero y tomamos decisiones con
+                datos reales. ¡100% recomendada!"
+              </p>
+            </div>
+
+          </div>
+          <div class="card-testimonio">
+            <img src="assets/img/testimoniales/testimonial-3.png" alt="Pedro Pablo K." />
+            <div class="card-content">
+              <h3 class="nombre">Pedro Pablo K.</h3>
+              <p class="rol">- Proveedor de restaurantes -</p>
+              <p class="comentario">
+                "Gracias a la app, gestiono mis pedidos sin errores y mis clientes están siempre
+                informados. ¡Me ayudó a crecer!"
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="preguntas" class="faq-section">
+      <h2>Preguntas Frecuentes</h2>
+      <p class="subtitle">Foro de preguntas frecuentes</p>
+
+      <div class="faq-grid">
+        <div class="faq-box">
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Qué es Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">Restock es una plataforma que simplifica la operación gastronómica conectando
+            restaurantes y proveedores, optimizando el inventario y mejorando la eficiencia en cada pedido.</p>
+        </div>
+        <div class="faq-box">
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Cuánto cuesta Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">En Restock, todos nuestros planes te ofrecen los mismos beneficios premium. Puedes
+            suscribirte por más tiempo y acceder a descuentos exclusivos. Elige entre plan mensual, semestral o anual,
+            ¡y optimiza tu operación desde el primer día!</p>
+        </div>
+        <div class="faq-box full-width">
+          <div class="flex-desplegable" onclick="toggleFaq(this)">
+            <h3>¿Cómo funciona Restock?</h3>
+            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
+          </div>
+          <p class="respuesta">Restock permite gestionar inventarios, conectando restaurantes con proveedores de forma
+            rápida y eficiente. ¡Así simplificamos todo el proceso!</p>
+        </div>
+      </div>
+
+
+      <div class="btn-more">
+        <button>VER MÁS</button>
+      </div>
+    </section>
+
+    <section class="tutorial" id="tutorial">
+      <div class="tutorial__header">
+        <h1 class="tutorial__title">Tutorial</h1>
+        <p class="tutorial__description">¿Cómo usar la plataforma? ¡Aquí te explicamos lo principal que debes saber!</p>
+      </div>
+      <div class="tutorial__grid">
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">1. Elige tu plan de suscripción.</div>
+          <img src="assets/img/tutorial/tutorial1.png" alt="Paso 1 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">2. En el apartado de inventario, verás la opción de agregar los
+            ingredientes/insumos con los que trabajas.</div>
+          <img src="assets/img/tutorial/tutorial2.png" alt="Paso 2 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">3. Ingresa la información de tus insumos.</div>
+          <img src="assets/img/tutorial/tutorial3.png" alt="Paso 3 del tutorial">
+        </div>
+        <div class="tutorial__step">
+          <div class="tutorial__step-title">4. Después verás un listado del stock de tu inventario.</div>
+          <img src="assets/img/tutorial/tutorial4.png" alt="Paso 4 del tutorial">
+        </div>
+      </div>
+      <div class="tutorial__links-container">
+        <div class="tutorial__links">
+          <ul>
+            <li>De esta manera, podrás ir gestionando tu inventario, recibir alertas, realizar pedidos
+              automáticos y ¡mucho más!</li>
+            <li>Para conocer más sobre la plataforma accede a: <a href="https://youtu.be/jaTRL6bPTAY?si=WXlqrBjqUyx37VKQ">¿Cómo usar Restock? - Guía completa</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div class="contact__container">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__description"> ¿Tienes preguntas o necesitas asistencia? Ponte en contacto con el equipo de
+          Restock. Estamos aquí para ayudarte. </p>
+        <form class="contact__form">
+          <div class="contact__group">
+            <input type="text" name="nombre" placeholder="Nombre" required />
+            <input type="email" name="correo" placeholder="Correo" required />
+          </div>
+
+          <div class="contact__group">
+            <input type="tel" name="telefono" placeholder="Teléfono" required />
+          </div>
+
+          <div class="contact__group">
+            <textarea name="mensaje" placeholder="Mensaje" rows="10" required></textarea>
+          </div>
+
+          <div class="contact__submit">
+            <button type="submit" class="btn btn--primary">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="descargar" class="download-section">
+      <div class="download-wrapper">
+        <img src="assets/img/descargar/imagen-principal.png" alt="Personas analizando datos" class="download-bg-image">
+
+        <div class="download-card">
+          <h2>Descarga Restock y mejora tu negocio</h2>
+          <p>
+            Gestiona tu inventario de forma inteligente y sin complicaciones, desde cualquier lugar. <br>
+            Disponible para iOS y Android, Restock te ofrece herramientas avanzadas para controlar insumos, pedidos y
+            proveedores en tiempo real. Recibe alertas automáticas, toma decisiones estratégicas y mantén tu restaurante
+            o negocio siempre abastecido.
+            ¡Descárgala gratis y lleva tu gestión al siguiente nivel con Restock!
+          </p>
+          <div class="store-buttons">
+            <div class="store-icon-wrapper">
+              <img src="assets/img/descargar/playstore.png" alt="Google Play" class="store-icon">
+            </div>
+            <div class="store-icon-wrapper">
+              <img src="assets/img/descargar/apple.png" alt="App Store" class="store-icon">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="footer">
+    <div class="footer__top">
+      <div class="footer__top-left">
+        <img src="assets/img/restock_logo.png" alt="Restock logo" class="footer__logo" />
+        <p class="footer__text">Con Restock, gestiona tu inventario con precisión y tranquilidad en cada movimiento.
+          La
+          eficiencia de tu cocina y tu negocio es nuestra prioridad, 24/7.</p>
+      </div>
+      <div class="footer__top-right-content">
+        <div class="footer__sections">
+          <h4>Secciones</h4>
+          <ul>
+            <li><a href="#inicio">Nosotros</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+            <li><a href="#preguntas">Preguntas</a></li>
+            <li><a href="#tutorial">Tutorial</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#contacto">Descargar</a></li>
+          </ul>
+        </div>
+        <div class="footer__social">
+          <h4>Redes Sociales</h4>
+          <div class="footer__social-links">
+            <a href="#" aria-label="Facebook"><img src="assets/img/Facebook.png" alt="iconFacebook" />@restock</a>
+            <a href="#" aria-label="Instagram"><img src="assets/img/Instagram.png" alt="iconInstagram" />@restock</a>
+            <a href="#" aria-label="Twitter"><img src="assets/img/Twitter.png" alt="@restock" />@restock</a>
+            <a href="#" aria-label="LinkedIn"><img src="assets/img/LinkedIn.png" alt="Restock" />Restock</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="footer__divider">
+    <div class="footer__bottom">
+      <a href="#politicas">Políticas de Privacidad</a>
+      <span class="divider">|</span>
+      <a href="#terminos">Términos de Servicio</a>
+      <span class="divider">|</span>
+      <span>© 2025 Restock. Todos los derechos reservados.</span>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="assets/scripts/main.js" defer></script>
+  <script src="assets/scripts/desplegable-preguntas.js" defer></script>
+
+</body>
+
+</html>
