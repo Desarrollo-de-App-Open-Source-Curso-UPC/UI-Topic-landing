@@ -5,10 +5,22 @@ function toggleFaq(element) {
 
     faqBox.classList.toggle('abierto');
 
-    // Mostrar u ocultar la respuesta
     if (faqBox.classList.contains('abierto')) {
         respuesta.style.display = 'block';
     } else {
         respuesta.style.display = 'none';
     }
 }
+
+const btnMore = document.querySelector('.btn-more button');
+const extraFaqs = document.querySelectorAll('.faq-box.extra');
+
+btnMore.addEventListener('click', () => {
+    const isShowingMore = btnMore.textContent === 'SEE LESS';
+
+    extraFaqs.forEach(faq => {
+        faq.classList.toggle('hidden', isShowingMore);
+    });
+
+    btnMore.textContent = isShowingMore ? 'SEE MORE' : 'SEE LESS';
+});
