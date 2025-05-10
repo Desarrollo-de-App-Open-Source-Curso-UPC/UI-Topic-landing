@@ -52,19 +52,19 @@
       </button>
       <div class="navbar__menu">
         <ul class="navbar__links">
-          <li><a href="#inicio" class="nav-item" data-link="inicio">Inicio</a></li>
-          <li><a href="#about-us" class="nav-item" data-link="nosotros">Nosotros</a></li>
-          <li><a href="#benefits" class="nav-item" data-link="benefits">Beneficios</a></li>
-          <li><a href="#testimonios" class="nav-item">Testimonios</a></li>
-          <li><a href="#preguntas" class="nav-item" data-link="preguntas">Preguntas</a></li>
-          <li><a href="#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
-          <li><a href="#contacto" class="nav-item" data-link="contacto">Contacto</a></li>
-          <li><a href="#descargar" class="nav-item" data-link="descargar">Descargar</a></li>
+          <li><a href="#inicio" class="nav-item" data-link="inicio" data-i18n="navbar.home">Home</a></li>
+          <li><a href="#about-us" class="nav-item" data-link="nosotros" data-i18n="navbar.about">About</a></li>
+          <li><a href="#benefits" class="nav-item" data-link="benefits" data-i18n="navbar.benefits">Benefits</a></li>
+          <li><a href="#testimonios" class="nav-item" data-link="testimonios" data-i18n="navbar.testimonials">Testimonials</a></li>
+          <li><a href="#preguntas" class="nav-item" data-link="preguntas" data-i18n="navbar.questions">Questions</a></li>
+          <li><a href="#tutorial" class="nav-item" data-link="tutorial" data-i18n="navbar.tutorial">Tutorial</a></li>
+          <li><a href="#contacto" class="nav-item" data-link="contacto"data-i18n="navbar.contact">Contact</a></li>
+          <li><a href="#descargar" class="nav-item" data-link="descargar" data-i18n="navbar.download">Download</a></li>
         </ul>
         <div class="navbar__actions">
-          <a href="access.html#signin" class="action">Inicio sesión</a>
+          <a href="access.html#signin" class="action" data-i18n="navbar.signin">Sign In</a>
           <span class="divider">|</span>
-          <a href="access.html#signup" class="action">Registro</a>
+          <a href="access.html#signup" class="action" data-i18n="navbar.signup">Sign Up</a>
           <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
             <span class="material-icons">language</span>
 
@@ -76,15 +76,15 @@
     <section class="hero" id="inicio">
       <div class="hero-content">
         <div class="hero-text">
-          <h1>Welcome to <br>Restock!</h1>
-          <h3 class="subtitle">- Presented by UI-Topic -</h3>
-          <p>
+          <h1 data-i18n="hero.title">Welcome to <br>Restock!</h1>
+          <h3 class="subtitle" data-i18n="hero.subtitle">- Presented by UI-Topic -</h3>
+          <p data-i18n="hero.description">
             Connect, manage and grow seamlessly!<br />
             Our platform helps you optimize your inventory, simplify ordering and maintain full control of your
             operations<br />
             it's time to transform the way you work and collaborate in the food chain!
           </p>
-          <button class="btn-start" id="btnStart">START</button>
+          <button class="btn-start" id="btnStart" data-i18n="hero.btnStart">START</button>
         </div>
         <div class="hero-image">
           <img src="assets/img/hero-image.jpg" alt="Store interior" />
@@ -98,48 +98,71 @@
 
     <section class="about-us" id="about-us">
       <div class="about-us-content">
-        <h1 class="about-us-title">Nosotros</h1>
-        <p class="about-us-description">
+        <h1 class="about-us-title" data-i18n="aboutUs.title">Nosotros</h1>
+        <p class="about-us-description" data-i18n="aboutUs.description">
           Somos <b> UI-Topic </b>, un equipo que simplifica la gestión de inventario de negocios gastronómicos para
           maximizar sus ganancias.
         </p>
         <div class="about-us-cards">
           <div class="card">
             <img src="assets/img/about-us/our-help.png" alt="Cómo ayudamos" />
-            <h3>Cómo ayudamos</h3>
-            <p>Conectamos restaurantes y proveedores mediante una plataforma inteligente que
+            <h3 data-i18n="aboutUs.cards.help.title">Cómo ayudamos</h3>
+            <p data-i18n="aboutUs.cards.help.text">Conectamos restaurantes y proveedores mediante una plataforma inteligente que
               automatiza el control de inventario, optimiza pedidos y mejora la eficiencia
               operativa en el sector gastronómico.</p>
           </div>
           <div class="card">
             <img src="assets/img/about-us/valor.png" alt="Propuesta de valor" />
-            <h3>Propuesta de valor</h3>
-            <p>Centralizamos y automatizamos la gestión de inventarios y pedidos en la industria gastronómica,
+            <h3 data-i18n="aboutUs.cards.value.title">Propuesta de valor</h3>
+            <p data-i18n="aboutUs.cards.value.text">Centralizamos y automatizamos la gestión de inventarios y pedidos en la industria gastronómica,
               conectando eficientemente a restaurantes y proveedores para reducir desperdicios y tomar
               decisiones más inteligentes.</p>
           </div>
           <div class="card">
             <img src="assets/img/about-us/mision-vision.png" alt="Misión y Visión" />
-            <h3>Misión y Visión</h3>
-            <p>Impulsamos la eficiencia y sostenibilidad del sector gastronómico con una plataforma inteligente
+            <h3 data-i18n="aboutUs.cards.mission.title">Misión y Visión</h3>
+            <p data-i18n="aboutUs.cards.mission.text">Impulsamos la eficiencia y sostenibilidad del sector gastronómico con una plataforma inteligente
               que transforma la gestión de insumos y pedidos para restaurantes y proveedores.</p>
+          </div>
+        </div>
+        <h2 class="about-us-subtitle" data-i18n="aboutUs.team.title">Equipo de Desarrollo</h2>
+        <div class="about-us-team">
+          <div class="team-card">
+            <img src="assets/img/team/julio.png" alt="Julio Castro" />
+            <p class="team-name" data-i18n="aboutUs.team.julio">Julio Castro</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/img/team/gaby.jpeg" alt="Gabriela Shapiama" />
+            <p class="team-name" data-i18n="aboutUs.team.gabriela">Gabriela Shapiama</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/img/team/jahaziel.jpg" alt="Jahaziel Guerra" />
+            <p class="team-name" data-i18n="aboutUs.team.jahaziel">Jahaziel Guerra</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/img/team/williams.png" alt="Williams Avendaño" />
+            <p class="team-name" data-i18n="aboutUs.team.williams">Williams Avendaño</p>
+          </div>
+          <div class="team-card">
+            <img src="assets/img/team/yaku.png" alt="Yaku Guzmán" />
+            <p class="team-name" data-i18n="aboutUs.team.yaku">Yaku Guzmán</p>
           </div>
         </div>
     </section>
 
     <section class="benefits" id="benefits">
       <div class="benefits-content">
-        <h1 class="benefits-title">Beneficios</h1>
-        <p class="benefits-description">
+        <h1 class="benefits-title" data-i18n="benefits.title">Beneficios</h1>
+        <p class="benefits-description" data-i18n="benefits.description">
           Descubre cómo nuestra plataforma puede ayudarte a tomar el control
           de tu inventario y alcanzar tus objetivos económicos de manera inteligente y eficaz.
         </p>
-        <h2 class="benefits-admin-title">Dueños/administradores de restaurantes</h2>
+        <h2 class="benefits-admin-title" data-i18n="benefits.adminTitle">Dueños/administradores de restaurantes</h2>
         <div class="benefits-cards-admin">
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/adminbenefit-1.png" alt="Beneficio 1" />
-            <div class="benefits-text">
-              <p>Control preciso del inventario y reducción de desperdicios.</p>
+            <div class="benefits-text" >
+              <p data-i18n="benefits.adminCards.1">Control preciso del inventario y reducción de desperdicios.</p>
             </div>
 
 
@@ -147,63 +170,63 @@
           <div class="benefits-card">
             <img src="assets/img/benefits/adminbenefit-2.png" alt="Beneficio 2" />
             <div class="benefits-text">
-              <p>Gestión eficiente de compras, recetas y abastecimiento.</p>
+              <p data-i18n="benefits.adminCards.2">Gestión eficiente de compras, recetas y abastecimiento.</p>
             </div>
           </div>
 
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/adminbenefit-3.png" alt="Beneficio 3" />
             <div class="benefits-text">
-              <p>Alertas automáticas y métricas clave para decisiones estratégicas.</p>
+              <p data-i18n="benefits.adminCards.3">Alertas automáticas y métricas clave para decisiones estratégicas.</p>
             </div>
           </div>
 
           <div class="benefits-card">
             <img src="assets/img/benefits/adminbenefit-4.png" alt="Beneficio 4" />
             <div class="benefits-text">
-              <p>Seguimiento en tiempo real de pedidos y entregas.</p>
+              <p data-i18n="benefits.adminCards.4">Seguimiento en tiempo real de pedidos y entregas.</p>
             </div>
           </div>
 
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/adminbenefit-5.png" alt="Beneficio 5" />
             <div class="benefits-text">
-              <p>Evaluación de proveedores y mejora continua de operaciones.</p>
+              <p data-i18n="benefits.adminCards.5">Evaluación de proveedores y mejora continua de operaciones.</p>
             </div>
           </div>
         </div>
 
-        <h2 class="benefits-supplier-title">Proveedores de restaurantes</h2>
+        <h2 class="benefits-supplier-title" data-i18n="benefits.supplierTitle">Proveedores de restaurantes</h2>
 
         <div class="benefits-cards-supplier">
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/supplierbenefit-6.png" alt="Beneficio 6" />
             <div class="benefits-text">
-              <p>Gestión fácil y actualizada del catálogo de productos.</p>
+              <p data-i18n="benefits.supplierCards.6">Gestión fácil y actualizada del catálogo de productos.</p>
             </div>
           </div>
           <div class="benefits-card">
             <img src="assets/img/benefits/supplierbenefit-7.png" alt="Beneficio 7" />
             <div class="benefits-text">
-              <p>Visualización y actualización del estado de órdenes en tiempo real.</p>
+              <p data-i18n="benefits.supplierCards.7">Visualización y actualización del estado de órdenes en tiempo real.</p>
             </div>
           </div>
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/supplierbenefit-8.png" alt="Beneficio 8" />
             <div class="benefits-text">
-              <p>Acceso a historial de ventas y reportes de facturación.</p>
+              <p data-i18n="benefits.supplierCards.8">Acceso a historial de ventas y reportes de facturación.</p>
             </div>
           </div>
           <div class="benefits-card">
             <img src="assets/img/benefits/supplierbenefit-9.png" alt="Beneficio 9" />
             <div class="benefits-text">
-              <p>Comunicación directa con restaurantes y mejor reputación gracias al feedback.</p>
+              <p data-i18n="benefits.supplierCards.9">Comunicación directa con restaurantes y mejor reputación gracias al feedback.</p>
             </div>
           </div>
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/supplierbenefit-10.png" alt="Beneficio 10" />
             <div class="benefits-text">
-              <p>Plataforma accesible para organizar y optimizar sus despachos.</p>
+              <p data-i18n="benefits.supplierCards.10">Plataforma accesible para organizar y optimizar sus despachos.</p>
             </div>
           </div>
         </div>
@@ -214,20 +237,21 @@
 
     <section id="testimonios" class="testimonios-section">
       <div class="container">
-        <h2 class="titulo-testimonios">Testimonials</h2>
-        <p class="descripcion-testimonios">
-          Hear what our users are saying about how Restock has transformed their business, helping them manage their
-          inventory smarter and achieve their goals with greater peace of mind and confidence.
+        <h2 class="titulo-testimonios" data-i18n="testimonials.title">Testimonios</h2>
+        <p class="descripcion-testimonios" data-i18n="testimonials.description">
+          Escucha lo que nuestros usuarios dicen sobre cómo Restock ha transformado su negocio,
+          ayudándolos a gestionar su inventario de manera más inteligente y a alcanzar sus metas
+          con mayor tranquilidad y confianza.
         </p>
         <div class="testimonios-cards">
           <div class="card-testimonio">
             <img src="assets/img/testimoniales/testimonial-1.png" alt="Alejandro R." />
             <div class="card-content">
-              <h3 class="nombre">Alejandro R.</h3>
-              <p class="rol">- Restaurant Manager -</p>
-              <p class="comentario">
-                “Since using the platform, we have total inventory control and zero stock outs - a total game changer
-                for our operation!”
+              <h3 class="nombre" data-i18n="testimonials.cards.1.name">Alejandro R.</h3>
+              <p class="rol" data-i18n="testimonials.cards.1.role">- Administrador de restaurante -</p>
+              <p class="comentario" data-i18n="testimonials.cards.1.comment">
+                “Desde que usamos la plataforma, tenemos el control total del inventario y cero
+                quiebres de stock. ¡Un cambio total en nuestra operación!”
               </p>
             </div>
 
@@ -235,10 +259,11 @@
           <div class="card-testimonio">
             <img src="assets/img/testimoniales/testimonial-2.png" alt="Katy P." />
             <div class="card-content">
-              <h3 class="nombre">Katy P.</h3>
-              <p class="rol">- Restaurant Owner -</p>
-              <p class="comentario">
-                “Now everything is automated. We save time, money and make decisions with real data. 100% recommended!”
+              <h3 class="nombre" data-i18n="testimonials.cards.2.name">Katy P.</h3>
+              <p class="rol" data-i18n="testimonials.cards.2.role">- Dueña de restaurante -</p>
+              <p class="comentario" data-i18n="testimonials.cards.2.comment">
+                "Ahora todo está automatizado. Ahorramos tiempo, dinero y tomamos decisiones con
+                datos reales. ¡100% recomendada!"
               </p>
             </div>
 
@@ -246,11 +271,11 @@
           <div class="card-testimonio">
             <img src="assets/img/testimoniales/testimonial-3.png" alt="Pedro Pablo K." />
             <div class="card-content">
-              <h3 class="nombre">Pedro Pablo K.</h3>
-              <p class="rol">- Restaurant Supplier -</p>
-              <p class="comentario">
-                “Thanks to the app, I manage my orders without errors and my customers are always informed. It helped me
-                grow!”
+              <h3 class="nombre" data-i18n="testimonials.cards.3.name">Pedro Pablo K.</h3>
+              <p class="rol" data-i18n="testimonials.cards.3.role">- Proveedor de restaurantes -</p>
+              <p class="comentario" data-i18n="testimonials.cards.3.comment">
+                "Gracias a la app, gestiono mis pedidos sin errores y mis clientes están siempre
+                informados. ¡Me ayudó a crecer!"
               </p>
             </div>
 
@@ -260,93 +285,78 @@
     </section>
 
     <section id="preguntas" class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-      <p class="subtitle">Frequently asked questions Forum</p>
+      <h2 data-i18n="faq.title">Preguntas Frecuentes</h2>
+      <p class="subtitle" data-i18n="faq.subtitle">Foro de preguntas frecuentes</p>
 
       <div class="faq-grid">
         <div class="faq-box">
           <div class="flex-desplegable" onclick="toggleFaq(this)">
-            <h3>What is Restock?</h3>
+            <h3 data-i18n="faq.items.1.question">¿Qué es Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta">Restock is a platform that simplifies the gastronomic operation by connecting restaurants
-            and suppliers, optimizing inventory and improving the efficiency of each order.</p>
+          <p class="respuesta" data-i18n="faq.items.1.answer">Restock es una plataforma que simplifica la operación gastronómica conectando
+            restaurantes y proveedores, optimizando el inventario y mejorando la eficiencia en cada pedido.</p>
         </div>
         <div class="faq-box">
           <div class="flex-desplegable" onclick="toggleFaq(this)">
-            <h3>How much does Restock cost?</h3>
+            <h3 data-i18n="faq.items.2.question">¿Cuánto cuesta Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta">At Restock, all our plans offer you the same premium benefits. The difference is in the
-            savings: you can subscribe for longer and access exclusive discounts. Choose between a monthly, semi-annual
-            or annual plan, and optimize your operation from day one!</p>
+          <p class="respuesta" data-i18n="faq.items.2.answer">En Restock, todos nuestros planes te ofrecen los mismos beneficios premium. Puedes
+            suscribirte por más tiempo y acceder a descuentos exclusivos. Elige entre plan mensual, semestral o anual,
+            ¡y optimiza tu operación desde el primer día!</p>
         </div>
         <div class="faq-box full-width">
           <div class="flex-desplegable" onclick="toggleFaq(this)">
-            <h3>How does Restock work?</h3>
+            <h3 data-i18n="faq.items.3.question">¿Cómo funciona Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta">Restock connects restaurants with suppliers, automates inventory and order management,
-            enables real-time tracking and facilitates decisions with data and feedback.</p>
+          <p class="respuesta" data-i18n="faq.items.3.answer">Restock permite gestionar inventarios, conectando restaurantes con proveedores de forma
+            rápida y eficiente. ¡Así simplificamos todo el proceso!</p>
         </div>
-
-        <div class="faq-box extra hidden">
-          <div class="flex-desplegable" onclick="toggleFaq(this)">
-            <h3>Can I cancel my subscription?</h3>
-            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
-          </div>
-          <p class="respuesta">Yes, you can cancel your subscription at any time from your account settings without
-            penalties.</p>
-        </div>
-        <div class="faq-box extra hidden">
-          <div class="flex-desplegable" onclick="toggleFaq(this)">
-            <h3>Who can use Restock?</h3>
-            <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
-          </div>
-          <p class="respuesta">Restock is designed for restaurants, bars, cafes, and all food service establishments
-            that manage inventories and suppliers.</p>
-        </div>
-
       </div>
 
 
       <div class="btn-more">
-        <button>SEE MORE</button>
+        <button><p data-i18n="faq.moreButton">VER MÁS</p></button>
       </div>
     </section>
 
     <section class="tutorial" id="tutorial">
       <div class="tutorial__header">
-        <h1 class="tutorial__title">Tutorial</h1>
-        <p class="tutorial__description">How to use the platform? Here are the main things you need to know!</p>
+        <h1 class="tutorial__title" data-i18n="tutorial.title">Tutorial</h1>
+        <p class="tutorial__description" data-i18n="tutorial.description">How to use the platform? Here are the main things you need to know!</p>
       </div>
       <div class="tutorial__grid">
         <div class="tutorial__step">
-          <div class="tutorial__step-title">1. Choose your subscription plan.</div>
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.1">1. Choose your subscription plan.</div>
           <img src="assets/img/tutorial/tutorial1.png" alt="Step 1 of the tutorial">
         </div>
         <div class="tutorial__step">
-          <div class="tutorial__step-title">2. In the inventory section, you will see the option to add the
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.2">2. In the inventory section, you will see the option to add the
             ingredients/inputs you are working with.</div>
           <img src="assets/img/tutorial/tutorial2.png" alt="Step 2 of the tutorial">
         </div>
         <div class="tutorial__step">
-          <div class="tutorial__step-title">3. Enter your input information.</div>
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.3">3. Enter your input information.</div>
           <img src="assets/img/tutorial/tutorial3.png" alt="Step 3 of the tutorial">
         </div>
         <div class="tutorial__step">
-          <div class="tutorial__step-title">4. You will then see a list of your inventory stock.</div>
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.4">4. You will then see a list of your inventory stock.</div>
           <img src="assets/img/tutorial/tutorial4.png" alt="Step 4 of the tutorial">
         </div>
       </div>
       <div class="tutorial__links-container">
         <div class="tutorial__links">
           <ul>
-            <li>This way, you will be able to manage your inventory, receive alerts, place automatic orders and much
+            <li data-i18n="tutorial.links.item1">This way, you will be able to manage your inventory, receive alerts, place automatic orders and much
               more!</li>
-            <li>To learn more about the platform go to: <a target="_blank"
-                href="https://youtu.be/jaTRL6bPTAY?si=WXlqrBjqUyx37VKQ"> How
-                to use Restock - Complete Guide</a></li>
+            <li>
+              <span data-i18n="tutorial.links.item2">To learn more about the platform go to:</span>
+              <a target="_blank" href="https://youtu.be/jaTRL6bPTAY?si=WXlqrBjqUyx37VKQ">
+                Restock
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -354,8 +364,8 @@
 
     <section class="contact" id="contacto">
       <div class="contact__container">
-        <h2 class="contact__title">Contact</h2>
-        <p class="contact__description">Do you have questions or need assistance? Contact the Restock team. We are here
+        <h2 class="contact__title" data-i18n="contact.title">Contact</h2>
+        <p class="contact__description" data-i18n="contact.description">Do you have questions or need assistance? Contact the Restock team. We are here
           to help you.</p>
         <form class="contact__form">
           <div class="contact__group">
@@ -372,7 +382,7 @@
           </div>
 
           <div class="contact__submit">
-            <button type="submit" class="btn btn--primary">SEND</button>
+            <button type="submit" class="btn btn--primary" data-i18n="contact.form.submitButton">SEND</button>
           </div>
         </form>
       </div>
@@ -383,12 +393,13 @@
         <img src="assets/img/descargar/imagen-principal.png" alt="Personas analizando datos" class="download-bg-image">
 
         <div class="download-card">
-          <h2>Download Restock and improve your business</h2>
-          <p>
-            Manage your inventory in a smart and hassle-free way, from anywhere. Available for iOS and Android, Restock
-            offers you advanced tools to control supplies, orders and suppliers in real time. Receive automatic alerts,
-            make strategic decisions and keep your restaurant or business always stocked. Download it for free and take
-            your management to the next level with Restock!
+          <h2 data-i18n="download.title">Descarga Restock y mejora tu negocio</h2>
+          <p data-i18n="download.description">
+            Gestiona tu inventario de forma inteligente y sin complicaciones, desde cualquier lugar. <br>
+            Disponible para iOS y Android, Restock te ofrece herramientas avanzadas para controlar insumos, pedidos y
+            proveedores en tiempo real. Recibe alertas automáticas, toma decisiones estratégicas y mantén tu restaurante
+            o negocio siempre abastecido.
+            ¡Descárgala gratis y lleva tu gestión al siguiente nivel con Restock!
           </p>
           <div class="store-buttons">
             <div class="store-icon-wrapper">
@@ -407,24 +418,24 @@
     <div class="footer__top">
       <div class="footer__top-left">
         <img src="assets/img/restock_logo.png" alt="Restock logo" class="footer__logo" />
-        <p class="footer__text">With Restock, manage your inventory with precision and peace of mind with every move.
+        <p class="footer__text" data-i18n="footer.topLeftText">With Restock, manage your inventory with precision and peace of mind with every move.
           The efficiency of your kitchen and your business is our priority, 24/7.</p>
       </div>
       <div class="footer__top-right-content">
         <div class="footer__sections">
-          <h4>Sections</h4>
+          <h4 data-i18n="footer.sectionsTitle">Sections</h4>
           <ul>
-            <li><a href="#inicio">About us</a></li>
-            <li><a href="#beneficios">Benefits</a></li>
-            <li><a href="#testimonios">Testimonials</a></li>
-            <li><a href="#preguntas">Questions</a></li>
-            <li><a href="#tutorial">Tutorial</a></li>
-            <li><a href="#contacto">Contact</a></li>
-            <li><a href="#contacto">Download</a></li>
+            <li><a href="#inicio" data-i18n="footer.sections.about">About us</a></li>
+            <li><a href="#beneficios" data-i18n="footer.sections.benefits">Benefits</a></li>
+            <li><a href="#testimonios" data-i18n="footer.sections.testimonials">Testimonials</a></li>
+            <li><a href="#preguntas" data-i18n="footer.sections.faq">Questions</a></li>
+            <li><a href="#tutorial" data-i18n="footer.sections.tutorial">Tutorial</a></li>
+            <li><a href="#contacto" data-i18n="footer.sections.contact">Contact</a></li>
+            <li><a href="#download" data-i18n="footer.sections.download">Download</a></li>
           </ul>
         </div>
         <div class="footer__social">
-          <h4>Social Networking</h4>
+          <h4 data-i18n="footer.socialTitle">Social Networking</h4>
           <div class="footer__social-links">
             <a href="#" aria-label="Facebook"><img src="assets/img/Facebook.png" alt="iconFacebook" />@restock</a>
             <a href="#" aria-label="Instagram"><img src="assets/img/Instagram.png" alt="iconInstagram" />@restock</a>
@@ -436,18 +447,17 @@
     </div>
     <hr class="footer__divider">
     <div class="footer__bottom">
-      <a href="#politicas">Privacy Policy</a>
+      <a href="#politicas" data-i18n="footer.bottom.privacyPolicy">Privacy Policy</a>
       <span class="divider">|</span>
-      <a href="#terminos">Terms of Services</a>
+      <a href="#terminos" data-i18n="footer.bottom.terms">Terms of Services</a>
       <span class="divider">|</span>
-      <span>&copy 2025 Restock. All rights reserved.</span>
+      <span data-i18n="footer.bottom.rights">&copy 2025 Restock. All rights reserved.</span>
     </div>
   </footer>
 
-  <!-- JS -->
   <script src="assets/scripts/main.js" defer></script>
   <script src="assets/scripts/desplegable-preguntas.js" defer></script>
-
+  <script src="assets/scripts/translations.js"></script>
 </body>
 
 </html>

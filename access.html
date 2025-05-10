@@ -2,23 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
- 
-  <!-- Ícono -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Íconos Material sin frameworks -->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-  
-    <link rel="stylesheet" href="assets/styles/access.css">
-    <link rel="stylesheet" href="assets/styles/styles.css">
+    <!-- Ícono -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+
+    <!-- Íconos Material sin frameworks -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="assets/styles/access.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
     <title>Login</title>
   </head>
- 
 
   <body>
-
     <nav class="navbar">
       <div class="navbar__logo">
         <img src="assets/img/restock_logo.png" alt="Logo de Restock" />
@@ -28,19 +32,82 @@
       </button>
       <div class="navbar__menu">
         <ul class="navbar__links">
-          <li><a href="index.html#inicio" class="nav-item" data-link="inicio">Home</a></li>
-          <li><a href="index.html#about-us" class="nav-item" data-link="nosotros">About us</a></li>
-          <li><a href="index.html#beneficios" class="nav-item" data-link="beneficios">Benefits</a></li>
-          <li><a href="index.html#testimonios" class="nav-item">Testimonials</a></li>
-          <li><a href="index.html#preguntas" class="nav-item" data-link="preguntas">Questions</a></li>
-          <li><a href="index.html#tutorial" class="nav-item" data-link="tutorial">Tutorial</a></li>
-          <li><a href="index.html#contacto" class="nav-item" data-link="contacto">Contact</a></li>
-          <li><a href="index.html" class="nav-item" data-link="descargar">Download</a></li>
+          <li>
+            <a
+              href="index.html#inicio"
+              class="nav-item"
+              data-link="inicio"
+              data-i18n="navbar.home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#about-us"
+              class="nav-item"
+              data-link="nosotros"
+              data-i18n="navbar.about"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#beneficios"
+              class="nav-item"
+              data-link="beneficios"
+              data-i18n="navbar.benefits"
+              >Benefits</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#testimonios"
+              class="nav-item"
+              data-i18n="navbar.testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#preguntas"
+              class="nav-item"
+              data-link="preguntas"
+              data-i18n="navbar.questions"
+              >Questions</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#tutorial"
+              class="nav-item"
+              data-link="tutorial"
+              data-i18n="navbar.tutorial"
+              >Tutorial</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contacto"
+              class="nav-item"
+              data-link="contacto"
+              data-i18n="navbar.contact"
+              >Contact</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html"
+              class="nav-item"
+              data-link="descargar"
+              data-i18n="navbar.download"
+              >Download</a
+            >
+          </li>
         </ul>
         <div class="navbar__actions">
-          <a href="#signin" class="action">Sign in</a>
+          <a href="#signin" class="action" data-i18n="navbar.signin">Sign in</a>
           <span class="divider">|</span>
-          <a href="#signup" class="action">Sign up</a>
+          <a href="#signup" class="action" data-i18n="navbar.signup">Sign up</a>
           <button class="lang-btn" id="langBtn" aria-label="Cambiar idioma">
             <span class="material-icons">language</span>
           </button>
@@ -53,16 +120,35 @@
         <div class="signin-signup-recover">
           <!-- Login form -->
           <form id="sign-in-form" class="sign-in-form">
-            <h2 class="title">Sign in</h2>
-            <div class="input-field"> 
-              <input type="text" id="login-username" placeholder="User" required />
+            <h2 class="title" data-i18n="signin.title">Sign in</h2>
+            <div class="input-field">
+              <input
+                type="text"
+                id="login-username"
+                placeholder="User"
+                required
+              />
             </div>
-            <div class="input-field"> 
-              <input type="password" id="login-password" placeholder="Password" required />
+            <div class="input-field">
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Password"
+                required
+              />
             </div>
-            <a class="recover-password-opt" id="toggle-recover-password">Forgot your password?</a> 
-            <button type="submit" class="btn solid">Sign in</button>
-            <p class="social-text">--- Or sign in with ---</p>
+            <a
+              class="recover-password-opt"
+              id="toggle-recover-password"
+              data-i18n="signin.forgot"
+              >Forgot your password?</a
+            >
+            <button type="submit" class="btn solid" data-i18n="signin.button">
+              Sign in
+            </button>
+            <p class="social-text" data-i18n="signin.or">
+              --- Or sign in with ---
+            </p>
             <div class="social-media">
               <a onclick="simulateLogin('Google')" class="social-icon">
                 <i class="fab fa-google"></i>
@@ -72,49 +158,76 @@
               </a>
               <a onclick="simulateLogin('Apple')" class="social-icon">
                 <i class="fab fa-apple"></i>
-              </a> 
+              </a>
             </div>
-            
           </form>
 
           <!-- Register form -->
           <form id="sign-up-form" class="sign-up-form">
-            <h2 class="title">Sign up</h2>
-            <div class="input-field"> 
-              <input type="text" id="register-username" placeholder="User" required />
+            <h2 class="title" data-i18n="signup.title">Sign up</h2>
+            <div class="input-field">
+              <input
+                type="text"
+                id="register-username"
+                placeholder="User"
+                required
+              />
             </div>
-            <div class="input-field"> 
-              <input type="email" id="register-email" placeholder="e-mail" required />
+            <div class="input-field">
+              <input
+                type="email"
+                id="register-email"
+                placeholder="e-mail"
+                required
+              />
             </div>
-            <div class="input-field"> 
-              <input type="password" id="register-password" placeholder="Password" required />
+            <div class="input-field">
+              <input
+                type="password"
+                id="register-password"
+                placeholder="Password"
+                required
+              />
             </div>
-            <button type="submit" class="btn solid">Sign up</button>
-            <p class="social-text">--- Or sign up with ---</p>
+            <button type="submit" class="btn solid" data-i18n="signup.button">
+              Sign up
+            </button>
+            <p class="social-text" data-i18n="signup.or">
+              --- Or sign up with ---
+            </p>
             <div class="social-media">
-                <a onclick="simulateLogin('Google')" class="social-icon">
-                    <i class="fab fa-google"></i>
-                </a>
-                <a onclick="simulateLogin('Facebook')" class="social-icon">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a onclick="simulateLogin('Apple')" class="social-icon">
-                    <i class="fab fa-apple"></i>
-                </a> 
+              <a onclick="simulateLogin('Google')" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a onclick="simulateLogin('Facebook')" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a onclick="simulateLogin('Apple')" class="social-icon">
+                <i class="fab fa-apple"></i>
+              </a>
             </div>
           </form>
 
-          <!-- Recover password form -->
           <form id="recover-password-form" class="recover-password-form">
-            <h2 class="title">Forgot your password?</h2> 
-            <p class="text-recover-password">Don't worry. Resetting your password is easy: just tell us which e-mail address you registered with Restock.</p>
-            <div class="input-field"> 
-                <input type="email" id="recovery-email" placeholder="e-mail" required/>
-            </div> 
-            <button type="submit" class="btn solid">SEND</button>
-         </form>
-
-
+            <h2 class="title" data-i18n="recover.title">
+              Forgot your password?
+            </h2>
+            <p class="text-recover-password" data-i18n="recover.description">
+              Don't worry. Resetting your password is easy: just tell us which
+              e-mail address you registered with Restock.
+            </p>
+            <div class="input-field">
+              <input
+                type="email"
+                id="recovery-email"
+                placeholder="e-mail"
+                required
+              />
+            </div>
+            <button type="submit" class="btn solid" data-i18n="recover.button">
+              SEND
+            </button>
+          </form>
         </div>
       </div>
 
@@ -122,30 +235,39 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>Are you new?</h3>
-            <p>
+            <h3 data-i18n="panels.left.title">Are you new?</h3>
+            <p data-i18n="panels.left.text">
               Join our community and start improving your management today!
             </p>
-            <button class="btn switch" id="toggle-sign-up">
+            <button
+              class="btn switch"
+              id="toggle-sign-up"
+              data-i18n="panels.left.button"
+            >
               SIGN UP
             </button>
           </div>
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>Already have an account?</h3>
-            <p>
+            <h3 data-i18n="panels.right.title">Already have an account?</h3>
+            <p data-i18n="panels.right.text">
               Sign in to continue managing your inventory efficiently.
             </p>
-            <button class="btn switch" id="toggle-sign-in">
+            <button
+              class="btn switch"
+              id="toggle-sign-in"
+              data-i18n="panels.right.button"
+            >
               SIGN IN
             </button>
           </div>
         </div>
-      </div> 
-</div> 
+      </div>
+    </div>
 
     <script src="assets/scripts/access.js"></script>
     <script src="assets/scripts/main.js"></script>
+    <script src="assets/scripts/translations.js"></script>
   </body>
 </html>
