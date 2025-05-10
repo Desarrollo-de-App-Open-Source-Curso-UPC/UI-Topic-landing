@@ -3,7 +3,7 @@ const translations = {
     navbar: {
       home: 'Home',
       about: 'About Us',
-      benefits: 'Benefits', 
+      benefits: 'Benefits',
       testimonials: 'Testimonials',
       questions: 'Questions',
       tutorial: 'Tutorial',
@@ -11,6 +11,40 @@ const translations = {
       download: 'Download',
       signin: 'Sign In',
       signup: 'Sign Up'
+    },
+    signin: {
+      title: "Sign in",
+      userPlaceholder: "User",
+      passwordPlaceholder: "Password",
+      forgot: "Forgot your password?",
+      button: "Sign in",
+      or: "--- Or sign in with ---",
+    },
+    signup: {
+      title: "Sign up",
+      userPlaceholder: "User",
+      emailPlaceholder: "e-mail",
+      passwordPlaceholder: "Password",
+      button: "Sign up",
+      or: "--- Or sign up with ---",
+    },
+    recover: {
+      title: "Forgot your password?",
+      description: "Don't worry. Resetting your password is easy: just tell us which e-mail address you registered with Restock.",
+      emailPlaceholder: "e-mail",
+      button: "SEND",
+    },
+    panels: {
+      left: {
+        title: "Are you new?",
+        text: "Join our community and start improving your management today!",
+        button: "SIGN UP"
+      },
+      right: {
+        title: "Already have an account?",
+        text: "Sign in to continue managing your inventory efficiently.",
+        button: "SIGN IN"
+      }
     },
     hero: {
       title: 'Welcome to\nRestock!',
@@ -34,6 +68,14 @@ const translations = {
           title: 'Mission & Vision',
           text: 'We drive efficiency and sustainability in the gastronomic sector with an intelligent platform that transforms the management of supplies and orders for restaurants and suppliers.'
         }
+      },
+      team: {
+        title: "Development Team",
+        julio: "Julio Castro",
+        gabriela: "Gabriela Shapiama",
+        jahaziel: "Jahaziel Guerra",
+        williams: "Williams Avendaño",
+        yaku: "Yaku Guzmán"
       }
     },
     benefits: {
@@ -169,6 +211,40 @@ const translations = {
       signin: 'Iniciar sesión',
       signup: 'Registro'
     },
+    signin: {
+      title: "Iniciar sesión",
+      userPlaceholder: "Usuario",
+      passwordPlaceholder: "Contraseña",
+      forgot: "¿Olvidaste tu contraseña?",
+      button: "Iniciar sesión",
+      or: "--- O inicia sesión con ---",
+    },
+    signup: {
+      title: "Registrarse",
+      userPlaceholder: "Usuario",
+      emailPlaceholder: "Correo electrónico",
+      passwordPlaceholder: "Contraseña",
+      button: "Registrarse",
+      or: "--- O regístrate con ---",
+    },
+    recover: {
+      title: "¿Olvidaste tu contraseña?",
+      description: "No te preocupes. Restablecer tu contraseña es fácil: solo dinos con qué correo te registraste en Restock.",
+      emailPlaceholder: "Correo electrónico",
+      button: "ENVIAR",
+    },
+    panels: {
+      left: {
+        title: "¿Eres nuevo?",
+        text: "¡Únete a nuestra comunidad y comienza a mejorar tu gestión hoy!",
+        button: "REGISTRARSE"
+      },
+      right: {
+        title: "¿Ya tienes una cuenta?",
+        text: "Inicia sesión para seguir gestionando tu inventario eficientemente.",
+        button: "INICIAR SESIÓN"
+      }
+    },
     hero: {
       title: '¡Bienvenido a\nRestock!',
       subtitle: '- Presentado por UI-Topic -',
@@ -191,6 +267,14 @@ const translations = {
           title: 'Misión y Visión',
           text: 'Impulsamos la eficiencia y sostenibilidad del sector gastronómico con una plataforma inteligente que transforma la gestión de insumos y pedidos para restaurantes y proveedores.'
         }
+      },
+      team: {
+        title: "Equipo de Desarrollo",
+        julio: "Julio Castro",
+        gabriela: "Gabriela Shapiama",
+        jahaziel: "Jahaziel Guerra",
+        williams: "Williams Avendaño",
+        yaku: "Yaku Guzmán"
       }
     },
     benefits: {

@@ -50,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }); 
 let currentLang = 'en'
-  // Función que traduce el contenido
 function translatePage(lang) {
   const elements = document.querySelectorAll('[data-i18n]')
   elements.forEach(el => {
@@ -69,15 +68,16 @@ if (langBtn) {
   langBtn.addEventListener('click', () => {
     currentLang = currentLang === 'en' ? 'es' : 'en';
     translatePage(currentLang);
-    langBtn.textContent = currentLang === 'en' ? 'ES' : 'EN'; // opcional
+    langBtn.textContent = currentLang === 'en' ? 'EN' : 'ES'; // opcional
   });
 }
 
-// Traducir al cargar
+/* // Traducir al cargar
 document.addEventListener('DOMContentLoaded', () => {
   translatePage(currentLang);
 });
-  
+   */
+  translatePage(currentLang);
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY + 100;
