@@ -21,7 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <!-- Ícono -->
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
@@ -55,10 +55,12 @@
           <li><a href="#inicio" class="nav-item" data-link="inicio" data-i18n="navbar.home">Home</a></li>
           <li><a href="#about-us" class="nav-item" data-link="nosotros" data-i18n="navbar.about">About</a></li>
           <li><a href="#benefits" class="nav-item" data-link="benefits" data-i18n="navbar.benefits">Benefits</a></li>
-          <li><a href="#testimonios" class="nav-item" data-link="testimonios" data-i18n="navbar.testimonials">Testimonials</a></li>
-          <li><a href="#preguntas" class="nav-item" data-link="preguntas" data-i18n="navbar.questions">Questions</a></li>
+          <li><a href="#testimonios" class="nav-item" data-link="testimonios"
+              data-i18n="navbar.testimonials">Testimonials</a></li>
+          <li><a href="#preguntas" class="nav-item" data-link="preguntas" data-i18n="navbar.questions">Questions</a>
+          </li>
           <li><a href="#tutorial" class="nav-item" data-link="tutorial" data-i18n="navbar.tutorial">Tutorial</a></li>
-          <li><a href="#contacto" class="nav-item" data-link="contacto"data-i18n="navbar.contact">Contact</a></li>
+          <li><a href="#contacto" class="nav-item" data-link="contacto" data-i18n="navbar.contact">Contact</a></li>
           <li><a href="#descargar" class="nav-item" data-link="descargar" data-i18n="navbar.download">Download</a></li>
         </ul>
         <div class="navbar__actions">
@@ -107,46 +109,105 @@
           <div class="card">
             <img src="assets/img/about-us/our-help.png" alt="Cómo ayudamos" />
             <h3 data-i18n="aboutUs.cards.help.title">Cómo ayudamos</h3>
-            <p data-i18n="aboutUs.cards.help.text">Conectamos restaurantes y proveedores mediante una plataforma inteligente que
+            <p data-i18n="aboutUs.cards.help.text">Conectamos restaurantes y proveedores mediante una plataforma
+              inteligente que
               automatiza el control de inventario, optimiza pedidos y mejora la eficiencia
               operativa en el sector gastronómico.</p>
           </div>
           <div class="card">
             <img src="assets/img/about-us/valor.png" alt="Propuesta de valor" />
             <h3 data-i18n="aboutUs.cards.value.title">Propuesta de valor</h3>
-            <p data-i18n="aboutUs.cards.value.text">Centralizamos y automatizamos la gestión de inventarios y pedidos en la industria gastronómica,
+            <p data-i18n="aboutUs.cards.value.text">Centralizamos y automatizamos la gestión de inventarios y pedidos en
+              la industria gastronómica,
               conectando eficientemente a restaurantes y proveedores para reducir desperdicios y tomar
               decisiones más inteligentes.</p>
           </div>
           <div class="card">
             <img src="assets/img/about-us/mision-vision.png" alt="Misión y Visión" />
             <h3 data-i18n="aboutUs.cards.mission.title">Misión y Visión</h3>
-            <p data-i18n="aboutUs.cards.mission.text">Impulsamos la eficiencia y sostenibilidad del sector gastronómico con una plataforma inteligente
+            <p data-i18n="aboutUs.cards.mission.text">Impulsamos la eficiencia y sostenibilidad del sector gastronómico
+              con una plataforma inteligente
               que transforma la gestión de insumos y pedidos para restaurantes y proveedores.</p>
           </div>
         </div>
         <h2 class="about-us-subtitle" data-i18n="aboutUs.team.title">Equipo de Desarrollo</h2>
-        <div class="about-us-team">
-          <div class="team-card">
-            <img src="assets/img/team/julio.png" alt="Julio Castro" />
-            <p class="team-name" data-i18n="aboutUs.team.julio">Julio Castro</p>
+
+        <!-- Contenedor del equipo -->
+        <div>
+          <div class="about-us-team-row">
+            <!-- Julio Castro -->
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/team/julio.png" alt="Julio Castro" />
+              </div>
+              <p class="team-name">Julio Castro</p>
+              <p class="team-role" data-i18n="aboutUs.team.role">- Software Engineer -</p>
+              <div class="team-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <!-- Gabriela Shapiama -->
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/team/gaby.jpeg" alt="Gabriela Shapiama" />
+              </div>
+              <p class="team-name">Gabriela Shapiama</p>
+              <p class="team-role" data-i18n="aboutUs.team.role">- Software Engineer -</p>
+              <div class="team-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <!-- Jahaziel Guerra -->
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/team/jahaziel.jpg" alt="Jahaziel Guerra" />
+              </div>
+              <p class="team-name">Jahaziel Guerra</p>
+              <p class="team-role" data-i18n="aboutUs.team.role">- Software Engineer -</p>
+              <div class="team-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="team-card">
-            <img src="assets/img/team/gaby.jpeg" alt="Gabriela Shapiama" />
-            <p class="team-name" data-i18n="aboutUs.team.gabriela">Gabriela Shapiama</p>
+
+          <div class="about-us-team-row center-row">
+            <!-- Williams Avendaño -->
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/team/williams.png" alt="Williams Avendaño" />
+              </div>
+              <p class="team-name">Williams Avendaño</p>
+              <p class="team-role" data-i18n="aboutUs.team.role">- Software Engineer -</p>
+              <div class="team-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+
+            <!-- Yaku Guzmán -->
+            <div class="team-card">
+              <div class="profile-image">
+                <img src="assets/img/team/yaku.png" alt="Yaku Guzmán" />
+              </div>
+              <p class="team-name">Yaku Guzmán</p>
+              <p class="team-role" data-i18n="aboutUs.team.role">- Software Engineer -</p>
+              <div class="team-socials">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
           </div>
-          <div class="team-card">
-            <img src="assets/img/team/jahaziel.jpg" alt="Jahaziel Guerra" />
-            <p class="team-name" data-i18n="aboutUs.team.jahaziel">Jahaziel Guerra</p>
-          </div>
-          <div class="team-card">
-            <img src="assets/img/team/williams.png" alt="Williams Avendaño" />
-            <p class="team-name" data-i18n="aboutUs.team.williams">Williams Avendaño</p>
-          </div>
-          <div class="team-card">
-            <img src="assets/img/team/yaku.png" alt="Yaku Guzmán" />
-            <p class="team-name" data-i18n="aboutUs.team.yaku">Yaku Guzmán</p>
-          </div>
+
         </div>
     </section>
 
@@ -161,7 +222,7 @@
         <div class="benefits-cards-admin">
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/adminbenefit-1.png" alt="Beneficio 1" />
-            <div class="benefits-text" >
+            <div class="benefits-text">
               <p data-i18n="benefits.adminCards.1">Control preciso del inventario y reducción de desperdicios.</p>
             </div>
 
@@ -177,7 +238,8 @@
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/adminbenefit-3.png" alt="Beneficio 3" />
             <div class="benefits-text">
-              <p data-i18n="benefits.adminCards.3">Alertas automáticas y métricas clave para decisiones estratégicas.</p>
+              <p data-i18n="benefits.adminCards.3">Alertas automáticas y métricas clave para decisiones estratégicas.
+              </p>
             </div>
           </div>
 
@@ -208,7 +270,8 @@
           <div class="benefits-card">
             <img src="assets/img/benefits/supplierbenefit-7.png" alt="Beneficio 7" />
             <div class="benefits-text">
-              <p data-i18n="benefits.supplierCards.7">Visualización y actualización del estado de órdenes en tiempo real.</p>
+              <p data-i18n="benefits.supplierCards.7">Visualización y actualización del estado de órdenes en tiempo
+                real.</p>
             </div>
           </div>
           <div class="benefits-card alternate">
@@ -220,13 +283,15 @@
           <div class="benefits-card">
             <img src="assets/img/benefits/supplierbenefit-9.png" alt="Beneficio 9" />
             <div class="benefits-text">
-              <p data-i18n="benefits.supplierCards.9">Comunicación directa con restaurantes y mejor reputación gracias al feedback.</p>
+              <p data-i18n="benefits.supplierCards.9">Comunicación directa con restaurantes y mejor reputación gracias
+                al feedback.</p>
             </div>
           </div>
           <div class="benefits-card alternate">
             <img src="assets/img/benefits/supplierbenefit-10.png" alt="Beneficio 10" />
             <div class="benefits-text">
-              <p data-i18n="benefits.supplierCards.10">Plataforma accesible para organizar y optimizar sus despachos.</p>
+              <p data-i18n="benefits.supplierCards.10">Plataforma accesible para organizar y optimizar sus despachos.
+              </p>
             </div>
           </div>
         </div>
@@ -294,7 +359,8 @@
             <h3 data-i18n="faq.items.1.question">¿Qué es Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta" data-i18n="faq.items.1.answer">Restock es una plataforma que simplifica la operación gastronómica conectando
+          <p class="respuesta" data-i18n="faq.items.1.answer">Restock es una plataforma que simplifica la operación
+            gastronómica conectando
             restaurantes y proveedores, optimizando el inventario y mejorando la eficiencia en cada pedido.</p>
         </div>
         <div class="faq-box">
@@ -302,7 +368,8 @@
             <h3 data-i18n="faq.items.2.question">¿Cuánto cuesta Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta" data-i18n="faq.items.2.answer">En Restock, todos nuestros planes te ofrecen los mismos beneficios premium. Puedes
+          <p class="respuesta" data-i18n="faq.items.2.answer">En Restock, todos nuestros planes te ofrecen los mismos
+            beneficios premium. Puedes
             suscribirte por más tiempo y acceder a descuentos exclusivos. Elige entre plan mensual, semestral o anual,
             ¡y optimiza tu operación desde el primer día!</p>
         </div>
@@ -311,21 +378,25 @@
             <h3 data-i18n="faq.items.3.question">¿Cómo funciona Restock?</h3>
             <img class="flecha" src="assets/img/preguntas/flecha.svg" alt="Material Icon">
           </div>
-          <p class="respuesta" data-i18n="faq.items.3.answer">Restock permite gestionar inventarios, conectando restaurantes con proveedores de forma
+          <p class="respuesta" data-i18n="faq.items.3.answer">Restock permite gestionar inventarios, conectando
+            restaurantes con proveedores de forma
             rápida y eficiente. ¡Así simplificamos todo el proceso!</p>
         </div>
       </div>
 
 
       <div class="btn-more">
-        <button><p data-i18n="faq.moreButton">VER MÁS</p></button>
+        <button>
+          <p data-i18n="faq.moreButton">VER MÁS</p>
+        </button>
       </div>
     </section>
 
     <section class="tutorial" id="tutorial">
       <div class="tutorial__header">
         <h1 class="tutorial__title" data-i18n="tutorial.title">Tutorial</h1>
-        <p class="tutorial__description" data-i18n="tutorial.description">How to use the platform? Here are the main things you need to know!</p>
+        <p class="tutorial__description" data-i18n="tutorial.description">How to use the platform? Here are the main
+          things you need to know!</p>
       </div>
       <div class="tutorial__grid">
         <div class="tutorial__step">
@@ -333,7 +404,8 @@
           <img src="assets/img/tutorial/tutorial1.png" alt="Step 1 of the tutorial">
         </div>
         <div class="tutorial__step">
-          <div class="tutorial__step-title" data-i18n="tutorial.steps.2">2. In the inventory section, you will see the option to add the
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.2">2. In the inventory section, you will see the
+            option to add the
             ingredients/inputs you are working with.</div>
           <img src="assets/img/tutorial/tutorial2.png" alt="Step 2 of the tutorial">
         </div>
@@ -342,14 +414,16 @@
           <img src="assets/img/tutorial/tutorial3.png" alt="Step 3 of the tutorial">
         </div>
         <div class="tutorial__step">
-          <div class="tutorial__step-title" data-i18n="tutorial.steps.4">4. You will then see a list of your inventory stock.</div>
+          <div class="tutorial__step-title" data-i18n="tutorial.steps.4">4. You will then see a list of your inventory
+            stock.</div>
           <img src="assets/img/tutorial/tutorial4.png" alt="Step 4 of the tutorial">
         </div>
       </div>
       <div class="tutorial__links-container">
         <div class="tutorial__links">
           <ul>
-            <li data-i18n="tutorial.links.item1">This way, you will be able to manage your inventory, receive alerts, place automatic orders and much
+            <li data-i18n="tutorial.links.item1">This way, you will be able to manage your inventory, receive alerts,
+              place automatic orders and much
               more!</li>
             <li>
               <span data-i18n="tutorial.links.item2">To learn more about the platform go to:</span>
@@ -365,7 +439,8 @@
     <section class="contact" id="contacto">
       <div class="contact__container">
         <h2 class="contact__title" data-i18n="contact.title">Contact</h2>
-        <p class="contact__description" data-i18n="contact.description">Do you have questions or need assistance? Contact the Restock team. We are here
+        <p class="contact__description" data-i18n="contact.description">Do you have questions or need assistance?
+          Contact the Restock team. We are here
           to help you.</p>
         <form class="contact__form">
           <div class="contact__group">
@@ -418,7 +493,8 @@
     <div class="footer__top">
       <div class="footer__top-left">
         <img src="assets/img/restock_logo.png" alt="Restock logo" class="footer__logo" />
-        <p class="footer__text" data-i18n="footer.topLeftText">With Restock, manage your inventory with precision and peace of mind with every move.
+        <p class="footer__text" data-i18n="footer.topLeftText">With Restock, manage your inventory with precision and
+          peace of mind with every move.
           The efficiency of your kitchen and your business is our priority, 24/7.</p>
       </div>
       <div class="footer__top-right-content">

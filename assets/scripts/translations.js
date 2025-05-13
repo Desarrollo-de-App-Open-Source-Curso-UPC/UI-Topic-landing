@@ -67,10 +67,11 @@ const translations = {
         mission: {
           title: 'Mission & Vision',
           text: 'We drive efficiency and sustainability in the gastronomic sector with an intelligent platform that transforms the management of supplies and orders for restaurants and suppliers.'
-        }
+        },
       },
       team: {
         title: "Development Team",
+        role: '- Software Engineer -',
         julio: "Julio Castro",
         gabriela: "Gabriela Shapiama",
         jahaziel: "Jahaziel Guerra",
@@ -270,12 +271,14 @@ const translations = {
       },
       team: {
         title: "Equipo de Desarrollo",
+        role: '- Ingeniero de Software -',
         julio: "Julio Castro",
         gabriela: "Gabriela Shapiama",
         jahaziel: "Jahaziel Guerra",
         williams: "Williams Avendaño",
         yaku: "Yaku Guzmán"
-      }
+      },
+      
     },
     benefits: {
       title: 'Beneficios',
