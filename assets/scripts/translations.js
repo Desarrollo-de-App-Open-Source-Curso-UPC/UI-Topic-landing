@@ -142,6 +142,7 @@ const translations = {
     tutorial: {
       title: 'Tutorial',
       description: 'How to use the platform? Here are the main things you need to know!',
+      cta: 'Start Now',
       steps: {
         '1': '1. Choose your subscription plan.',
         '2': '2. In the inventory section, you will see the option to add the ingredients/inputs you are working with.',
@@ -343,6 +344,7 @@ const translations = {
     tutorial: {
       title: 'Tutorial',
       description: '¿Cómo usar la plataforma? ¡Aquí están las principales cosas que necesitas saber!',
+      cta: 'Comenzar Ahora',
       steps: {
         '1': '1. Elige tu plan de suscripción.',
         '2': '2. En la sección de inventario, verás la opción para agregar los ingredientes/insumos con los que trabajas.',
