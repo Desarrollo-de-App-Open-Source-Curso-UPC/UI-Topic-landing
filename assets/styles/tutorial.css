@@ -147,3 +147,18 @@
       color: #0056b3;
   }
 }
+
+ .tutorial__cta-button {
+  background-color: #4F8A5B;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tutorial__cta-button:hover {
+  background-color: #3a6c47;
+}
