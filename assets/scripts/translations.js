@@ -77,6 +77,9 @@ const translations = {
         jahaziel: "Jahaziel Guerra",
         williams: "Williams Avendaño",
         yaku: "Yaku Guzmán"
+      },
+      video: {
+        title: "About the Team"
       }
     },
     benefits: {
@@ -279,7 +282,9 @@ const translations = {
         williams: "Williams Avendaño",
         yaku: "Yaku Guzmán"
       },
-      
+      video: {
+        title: "Sobre el Equipo"
+      }
     },
     benefits: {
       title: 'Beneficios',
@@ -353,7 +358,7 @@ const translations = {
       },
       links: {
         item1: '¡De esta manera podrás gestionar tu inventario, recibir alertas, realizar pedidos automáticos y mucho más!',
-        item2: 'Para aprender más sobre la plataforma ve a: Guía completa de',
+        item2: 'Para aprender más sobre la plataforma ve a: Guía completa:',
         item2_url: 'https://youtu.be/jaTRL6bPTAY?si=WXlqrBjqUyx37VKQ'
       }
     },
