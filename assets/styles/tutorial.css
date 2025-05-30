@@ -106,6 +106,40 @@
   color: #0056b3;
 }
 
+
+.tutorial__cta-button {
+  background-color: #4F8A5B;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tutorial__cta-button:hover {
+  background-color: #3a6c47;
+}
+
+.tutorial__video-container {
+  position: relative;
+  width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  margin: 1rem auto; /* Centrado horizontal */
+  display: flex;
+  justify-content: center;
+}
+
+.tutorial__video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 /* mobile */
 @media (max-width: 900px) {
   .tutorial__description {
@@ -146,19 +180,4 @@
   .tutorial__links ul li a:hover {
       color: #0056b3;
   }
-}
-
- .tutorial__cta-button {
-  background-color: #4F8A5B;
-  color: white;
-  padding: 1rem 2rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.tutorial__cta-button:hover {
-  background-color: #3a6c47;
 }
