@@ -151,7 +151,7 @@ const translations = {
       },
       links: {
         item1: 'This way, you will be able to manage your inventory, receive alerts, place automatic orders and much more!',
-        item2: 'To learn more about the platform go to: How to use Restock - Complete Guide',
+        item2: 'To learn more about the platform go to: How to use Restock - Complete Guide:',
         item2_url: 'https://youtu.be/jaTRL6bPTAY?si=WXlqrBjqUyx37VKQ'
       }
     },
