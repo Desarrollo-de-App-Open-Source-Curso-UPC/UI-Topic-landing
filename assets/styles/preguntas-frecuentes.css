@@ -137,6 +137,11 @@ body {
     /* Rotar la flecha cuando está abierta */
 }
 
+.hidden {
+    display: none;
+}
+
+
 @media screen and (max-width: 768px) {
     .faq-grid {
         grid-template-columns: 1fr;

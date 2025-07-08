@@ -41,23 +41,43 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-  const navLinks = document.querySelectorAll('.nav-item');
+ const navLinks = document.querySelectorAll('.nav-item');
 
   navLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       navLinks.forEach(nav => nav.classList.remove('active'));
       link.classList.add('active');
     });
-  });
+  }); 
+let currentLang = 'en'
+function translatePage(lang) {
+  const elements = document.querySelectorAll('[data-i18n]')
+  elements.forEach(el => {
+    const keys = el.getAttribute('data-i18n').split('.')
+    let text = translations[lang]
+    keys.forEach(k => {
+      text = text[k]
+    })
+    el.textContent = text
+  })
+}
 
-  const langBtn = document.getElementById('langBtn');
-  if (langBtn) {
-    langBtn.addEventListener('click', () => {
-      console.log("Aca ire la funcionandad de lenguaje")
-      alert('Funcionalidad de cambio de idioma próximamente...');
-    });
-  }
-  
+// Evento del botón de idioma
+const langBtn = document.getElementById('langBtn');
+if (langBtn) {
+  langBtn.addEventListener('click', () => {
+    currentLang = currentLang === 'en' ? 'es' : 'en';
+    translatePage(currentLang);
+    langBtn.textContent = currentLang === 'en' ? 'EN' : 'ES'; // opcional
+  });
+}
+
+/* // Traducir al cargar
+document.addEventListener('DOMContentLoaded', () => {
+  translatePage(currentLang);
+});
+   */
+  translatePage(currentLang);
   const sections = document.querySelectorAll('section[id]');
   window.addEventListener('scroll', () => {
     const scrollPos = window.scrollY + 100;

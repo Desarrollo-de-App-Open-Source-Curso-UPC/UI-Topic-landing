@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.classList.add("sign-up-mode");
   } else if (hash === "#signin") {
     container.classList.remove("sign-up-mode");
-  } 
+  }
 });
 
 /* To access each view from the same access file */
@@ -25,25 +25,25 @@ document.addEventListener("DOMContentLoaded", () => {
       container.classList.add("sign-up-mode");
     } else if (hash === "#recover") {
       container.classList.add("recover-password-mode");
-    } else { 
+    } else {
       container.classList.remove("sign-up-mode", "recover-password-mode");
     }
-  } 
+  }
 
   updateModeFromHash();
- 
+
   window.addEventListener("hashchange", updateModeFromHash);
 });
 
 
-document.addEventListener("DOMContentLoaded", () => { 
+document.addEventListener("DOMContentLoaded", () => {
   console.log("DOM completamente cargado");
 
   // Switch between views
   const container = document.querySelector(".container");
   const toggleSignUp = document.querySelector("#toggle-sign-up");
   const toggleSignIn = document.querySelector("#toggle-sign-in");
-  const toggleRecoverPassword = document.querySelector("#toggle-recover-password");  
+  const toggleRecoverPassword = document.querySelector("#toggle-recover-password");
 
   toggleSignUp.addEventListener("click", () => {
     container.classList.add("sign-up-mode");
@@ -67,23 +67,19 @@ document.addEventListener("DOMContentLoaded", () => {
     const email = document.querySelector("#register-email").value.trim();
     const password = document.querySelector("#register-password").value();
 
-    if(username && email && password)
-    {
-      if(localStorage.getItem(username))
-      {
+    if (username && email && password) {
+      if (localStorage.getItem(username)) {
         alert(`Este usuario ya está registrado. Por favor, inicia sesión.`);
       }
-      else
-      {
+      else {
         localStorage.setItem(username, JSON.stringify({ email, password }));
         alert(`Registro exitoso. Ahora puedes iniciar sesión.`);
         signUpForm.reset();
       }
     }
-    else
-    {
+    else {
       alert(`Por favor, completa todos los campos.`);
-    } 
+    }
   });
 
   // Login Handler
@@ -96,51 +92,70 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const storedUser = localStorage.getItem(username);
 
-    if(storedUser)
-    {
+    if (storedUser) {
       const userData = JSON.parse(storedUser);
-      if(userData.password == password)
-      {
+      if (userData.password == password) {
         localStorage.setItem("currentUser", username);
         alert(`Inicio de sesión exitoso. Bienvenido ` + username + `!`);
-        window.location.href = "index.html"; 
-      } 
-      else 
-      {
+        window.location.href = "index.html";
+      }
+      else {
         alert(`Contraseña incorrecta.`);
       }
     }
-    else
-    {
+    else {
       alert(`Usuario no encontrado. Por favor, regístrate.`);
     }
-  }); 
+  });
 
+  let currentLang = 'en'
+  // Función que traduce el contenido
+  function translatePage(lang) {
+    const elements = document.querySelectorAll('[data-i18n]')
+    elements.forEach(el => {
+      const keys = el.getAttribute('data-i18n').split('.')
+      let text = translations[lang]
+      keys.forEach(k => {
+        text = text[k]
+      })
+      el.textContent = text
+    })
+  }
 
+  // Evento del botón de idioma
+  const langBtn = document.getElementById('langBtn');
+  if (langBtn) {
+    langBtn.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'es' : 'en';
+      translatePage(currentLang);
+      langBtn.textContent = currentLang === 'en' ? 'ES' : 'EN'; // opcional
+    });
+  }
+
+  // Traducir al cargar
+  document.addEventListener('DOMContentLoaded', () => {
+    translatePage(currentLang);
+  });
   // Password recovery manager
   const recoverPasswordForm = document.querySelector("#recover-password-form");
   recoverPasswordForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
-    const email = document.querySelector("#recovery-email").value.trim();  
+    const email = document.querySelector("#recovery-email").value.trim();
 
-    if (email) 
-      { 
+    if (email) {
       alert(`Se ha enviado un enlace de recuperación a ${email}`);
-       
+
       document.querySelector("#recovery-email").value = "";
-       
-    } else 
-    {
+
+    } else {
       alert("Email no registrado.");
     }
-  }); 
+  });
 });
 
-function simulateLogin(platform) 
-{
-  switch(platform)
-  {
+function simulateLogin(platform) {
+  switch (platform) {
     case "Google":
       window.location.href = "https://accounts.google.com/o/oauth2/v2/auth";
       break;
